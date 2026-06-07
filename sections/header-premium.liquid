@@ -1,0 +1,79 @@
+<header class="lp-header">
+
+  <div class="lp-container">
+
+      <div class="lp-header-wrapper">
+
+            <div class="lp-header-logo">
+
+                    {% if settings.logo != blank %}
+
+                              <a href="{{ routes.root_url }}">
+
+                                          <img
+                                                        src="{{ settings.logo | image_url: width: 300 }}"
+                                                                      alt="{{ shop.name }}"
+                                                                                    width="180"
+                                                                                                  height="60"
+                                                                                                                loading="eager"
+                                                                                                                            >
+
+                                                                                                                                      </a>
+
+                                                                                                                                              {% else %}
+
+                                                                                                                                                        <a href="{{ routes.root_url }}" class="lp-logo-text">
+                                                                                                                                                                    {{ shop.name }}
+                                                                                                                                                                              </a>
+
+                                                                                                                                                                                      {% endif %}
+
+                                                                                                                                                                                            </div>
+
+                                                                                                                                                                                                  <nav class="lp-header-nav lp-hide-mobile">
+
+                                                                                                                                                                                                          <a href="/collections/all">
+                                                                                                                                                                                                                    Productos
+                                                                                                                                                                                                                            </a>
+
+                                                                                                                                                                                                                                    <a href="/pages/academia">
+                                                                                                                                                                                                                                              Academia
+                                                                                                                                                                                                                                                      </a>
+
+                                                                                                                                                                                                                                                              <a href="/pages/nosotros">
+                                                                                                                                                                                                                                                                        Nosotros
+                                                                                                                                                                                                                                                                                </a>
+
+                                                                                                                                                                                                                                                                                        <a href="/pages/contacto">
+                                                                                                                                                                                                                                                                                                  Contacto
+                                                                                                                                                                                                                                                                                                          </a>
+
+                                                                                                                                                                                                                                                                                                                </nav>
+
+                                                                                                                                                                                                                                                                                                                      <div class="lp-header-actions">
+
+                                                                                                                                                                                                                                                                                                                              <a
+                                                                                                                                                                                                                                                                                                                                        href="/cart"
+                                                                                                                                                                                                                                                                                                                                                  class="lp-cart-button"
+                                                                                                                                                                                                                                                                                                                                                          >
+                                                                                                                                                                                                                                                                                                                                                                    Carrito
+                                                                                                                                                                                                                                                                                                                                                                              {% if cart.item_count > 0 %}
+                                                                                                                                                                                                                                                                                                                                                                                          ({{ cart.item_count }})
+                                                                                                                                                                                                                                                                                                                                                                                                    {% endif %}
+                                                                                                                                                                                                                                                                                                                                                                                                            </a>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                  </div>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                      </div>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                        </header>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                        {% schema %}
+                                                                                                                                                                                                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                                                                                                                                                                                                              "name": "Livo Premium Header",
+                                                                                                                                                                                                                                                                                                                                                                                                                                "settings": []
+                                                                                                                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                                                                                                                        {% endschema %}
+                                                                                                                                                                                                                                                                                                                                                                                                                        }

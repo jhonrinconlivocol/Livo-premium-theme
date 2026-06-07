@@ -1,0 +1,293 @@
+/* ==========================================
+   LIVO PREMIUM COMPONENTS
+   ========================================== */
+
+   /* ==========================================
+      BUTTONS
+      ========================================== */
+
+      .lp-btn {
+
+          display: inline-flex;
+
+            align-items: center;
+
+              justify-content: center;
+
+                gap: .5rem;
+
+                  padding: 14px 28px;
+
+                    border: none;
+
+                      border-radius: var(--lp-radius-md);
+
+                        cursor: pointer;
+
+                          font-weight: 600;
+
+                            font-size: 16px;
+
+                              transition: var(--lp-transition);
+
+                                text-align: center;
+      }
+
+      .lp-btn-primary {
+
+          background: var(--lp-gold);
+
+            color: var(--lp-white);
+
+              box-shadow: var(--lp-shadow-sm);
+      }
+
+      .lp-btn-primary:hover {
+
+          background: var(--lp-gold-dark);
+
+            transform: translateY(-2px);
+      }
+
+      .lp-btn-secondary {
+
+          background: transparent;
+
+            border: 1px solid var(--lp-gold);
+
+              color: var(--lp-gold);
+      }
+
+      .lp-btn-secondary:hover {
+
+          background: var(--lp-gold);
+
+            color: var(--lp-white);
+      }
+
+      /* ==========================================
+         CARDS
+         ========================================== */
+
+         .lp-card {
+
+              background: var(--lp-white);
+
+                border-radius: var(--lp-radius-lg);
+
+                  padding: 24px;
+
+                    box-shadow: var(--lp-shadow-md);
+         }
+
+         .lp-card-dark {
+
+              background: var(--lp-soft-dark);
+
+                color: var(--lp-ivory);
+
+                  border: 1px solid var(--lp-border-dark);
+         }
+
+         /* ==========================================
+            BADGES
+            ========================================== */
+
+            .lp-badge {
+
+                  display: inline-flex;
+
+                    align-items: center;
+
+                      gap: .5rem;
+
+                        padding: .5rem 1rem;
+
+                          border-radius: 999px;
+
+                            background: rgba(176,141,87,.12);
+
+                              color: var(--lp-gold);
+
+                                font-size: 14px;
+
+                                  font-weight: 600;
+            }
+
+            /* ==========================================
+               TRUST ITEMS
+               ========================================== */
+
+               .lp-trust-grid {
+
+                  display: grid;
+
+                    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+
+                      gap: 1rem;
+               }
+
+               .lp-trust-item {
+
+                  text-align: center;
+
+                    padding: 1rem;
+               }
+
+               .lp-trust-title {
+
+                  font-weight: 700;
+
+                    margin-top: .75rem;
+               }
+
+               /* ==========================================
+                  FORM ELEMENTS
+                  ========================================== */
+
+                  .lp-input,
+                  .lp-select,
+                  .lp-textarea {
+
+                      width: 100%;
+
+                        padding: 14px 16px;
+
+                          border-radius: var(--lp-radius-sm);
+
+                            border: 1px solid #d9d9d9;
+
+                              font-size: 16px;
+
+                                font-family: inherit;
+                  }
+
+                  .lp-input:focus,
+                  .lp-select:focus,
+                  .lp-textarea:focus {
+
+                      outline: none;
+
+                        border-color: var(--lp-gold);
+                  }
+
+                  /* ==========================================
+                     SECTION HEADINGS
+                     ========================================== */
+
+                     .lp-section-heading {
+
+                          max-width: 760px;
+
+                            margin: 0 auto 3rem;
+
+                              text-align: center;
+                     }
+
+                     .lp-section-heading h2 {
+
+                          font-size: clamp(2rem,5vw,3.5rem);
+
+                            margin-bottom: 1rem;
+                     }
+
+                     .lp-section-heading p {
+
+                          color: var(--lp-text-light);
+
+                            font-size: 1.1rem;
+                     }
+
+                     /* ==========================================
+                        TESTIMONIAL CARD
+                        ========================================== */
+
+                        .lp-testimonial {
+
+                              padding: 24px;
+
+                                border-radius: var(--lp-radius-lg);
+
+                                  background: var(--lp-white);
+
+                                    box-shadow: var(--lp-shadow-sm);
+                        }
+
+                        .lp-testimonial-author {
+
+                              font-weight: 700;
+
+                                margin-top: 1rem;
+                        }
+
+                        /* ==========================================
+                           PRODUCT PRICE
+                           ========================================== */
+
+                           .lp-price {
+
+                              display: flex;
+
+                                align-items: center;
+
+                                  gap: .75rem;
+
+                                    flex-wrap: wrap;
+                           }
+
+                           .lp-price-current {
+
+                              font-size: 2rem;
+
+                                font-weight: 700;
+
+                                  color: var(--lp-gold-dark);
+                           }
+
+                           .lp-price-compare {
+
+                              text-decoration: line-through;
+
+                                color: #999;
+                           }
+
+                           /* ==========================================
+                              RESPONSIVE
+                              ========================================== */
+
+                              @media (max-width: 768px) {
+
+                                  .lp-btn {
+
+                                        width: 100%;
+                                  }
+
+                                    .lp-card {
+
+                                            padding: 18px;
+                                    }
+                                }
+                                    }
+                                  }
+                              }
+                           }
+                           }
+                           }
+                        }
+                        }
+                     }
+                     }
+                     }
+                  }
+                  }
+               }
+               }
+               }
+            }
+         }
+         }
+      }
+      }
+      }
+      }
+      }

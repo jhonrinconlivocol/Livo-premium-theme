@@ -1,0 +1,210 @@
+/* ==========================================
+   LIVO PREMIUM THEME
+      DESIGN TOKENS
+      ========================================== */
+
+      :root {
+
+          /* COLORS */
+
+            --lp-gold: #B08D57;
+              --lp-gold-light: #C8A876;
+                --lp-gold-dark: #8E7045;
+
+                  --lp-dark: #121212;
+                    --lp-soft-dark: #1C1C1C;
+                      --lp-border-dark: #2A2A2A;
+
+                        --lp-ivory: #F5F1E8;
+                          --lp-white: #FFFFFF;
+
+                            --lp-science: #4A6A7D;
+                              --lp-green: #5E8C61;
+
+                                --lp-text: #2A2A2A;
+                                  --lp-text-light: #6B7280;
+
+                                    --lp-success: #16A34A;
+                                      --lp-warning: #F59E0B;
+                                        --lp-danger: #DC2626;
+
+                                          /* TYPOGRAPHY */
+
+                                            --lp-font-heading: "Cormorant Garamond", serif;
+                                              --lp-font-body: "Inter", sans-serif;
+
+                                                /* CONTAINERS */
+
+                                                  --lp-container-sm: 768px;
+                                                    --lp-container-md: 1200px;
+                                                      --lp-container-lg: 1400px;
+
+                                                        /* SPACING */
+
+                                                          --lp-space-xs: 0.5rem;
+                                                            --lp-space-sm: 1rem;
+                                                              --lp-space-md: 1.5rem;
+                                                                --lp-space-lg: 3rem;
+                                                                  --lp-space-xl: 5rem;
+                                                                    --lp-space-2xl: 7rem;
+
+                                                                      /* RADIUS */
+
+                                                                        --lp-radius-sm: 8px;
+                                                                          --lp-radius-md: 16px;
+                                                                            --lp-radius-lg: 24px;
+                                                                              --lp-radius-xl: 32px;
+
+                                                                                /* SHADOWS */
+
+                                                                                  --lp-shadow-sm: 0 2px 8px rgba(0,0,0,.08);
+
+                                                                                    --lp-shadow-md: 0 10px 30px rgba(0,0,0,.12);
+
+                                                                                      --lp-shadow-lg: 0 20px 60px rgba(0,0,0,.15);
+
+                                                                                        /* TRANSITIONS */
+
+                                                                                          --lp-transition: all .3s ease;
+
+      }
+
+      /* ==========================================
+         RESET
+         ========================================== */
+
+         *,
+         *::before,
+         *::after {
+              box-sizing: border-box;
+         }
+
+         html {
+              scroll-behavior: smooth;
+         }
+
+         body {
+
+              margin: 0;
+
+                font-family: var(--lp-font-body);
+
+                  color: var(--lp-text);
+
+                    background: var(--lp-white);
+
+                      line-height: 1.6;
+
+                        -webkit-font-smoothing: antialiased;
+
+                          text-rendering: optimizeLegibility;
+         }
+
+         img {
+              max-width: 100%;
+                display: block;
+         }
+
+         a {
+              text-decoration: none;
+                color: inherit;
+         }
+
+         button {
+              font-family: inherit;
+         }
+
+         ul,
+         ol {
+              margin: 0;
+                padding: 0;
+         }
+
+         h1,
+         h2,
+         h3,
+         h4,
+         h5,
+         h6 {
+
+              margin: 0 0 1rem;
+
+                font-family: var(--lp-font-heading);
+
+                  line-height: 1.1;
+
+                    color: inherit;
+         }
+
+         p {
+              margin: 0 0 1rem;
+         }
+
+         /* ==========================================
+            CONTAINER
+            ========================================== */
+
+            .lp-container {
+
+                  width: 100%;
+
+                    max-width: var(--lp-container-md);
+
+                      margin: 0 auto;
+
+                        padding-left: 1rem;
+                          padding-right: 1rem;
+            }
+
+            /* ==========================================
+               SECTIONS
+               ========================================== */
+
+               .lp-section {
+
+                  padding-top: var(--lp-space-xl);
+
+                    padding-bottom: var(--lp-space-xl);
+               }
+
+               /* ==========================================
+                  HELPERS
+                  ========================================== */
+
+                  .lp-dark {
+
+                      background: var(--lp-dark);
+
+                        color: var(--lp-ivory);
+                  }
+
+                  .lp-ivory {
+
+                      background: var(--lp-ivory);
+
+                        color: var(--lp-text);
+                  }
+
+                  .lp-text-center {
+                      text-align: center;
+                  }
+
+                  .lp-hidden {
+                      display: none;
+                  }
+                  }
+                  }
+                  }
+                  }
+               }
+            }
+         }
+         }
+         }
+         }
+         }
+         }
+         }
+         }
+         }
+      }
