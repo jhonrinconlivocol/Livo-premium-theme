@@ -7,439 +7,344 @@
       ========================================== */
 
       .lp-btn {
-
-          display: inline-flex;
-
-            align-items: center;
-
-              justify-content: center;
-
-                gap: .5rem;
-
-                  padding: 14px 28px;
-
-                    border: none;
-
-                      border-radius: var(--lp-radius-md);
-
-                        cursor: pointer;
-
-                          font-weight: 600;
-
-                            font-size: 16px;
-
-                              transition: var(--lp-transition);
-
-                                text-align: center;
-      }
-
-      .lp-btn-primary {
-
-          background: var(--lp-gold);
-
-            color: var(--lp-white);
-
-              box-shadow: var(--lp-shadow-sm);
-      }
-
-      .lp-btn-primary:hover {
-
-          background: var(--lp-gold-dark);
-
-            transform: translateY(-2px);
-      }
-
-      .lp-btn-secondary {
-
-          background: transparent;
-
-            border: 1px solid var(--lp-gold);
-
-              color: var(--lp-gold);
-      }
-
-      .lp-btn-secondary:hover {
-
-          background: var(--lp-gold);
-
-            color: var(--lp-white);
-      }
-
-      /* ==========================================
-         CARDS
-         ========================================== */
-
-         .lp-card {
-
-              background: var(--lp-white);
-
-                border-radius: var(--lp-radius-lg);
-
-                  padding: 24px;
-
-                    box-shadow: var(--lp-shadow-md);
-         }
-
-         .lp-card-dark {
-
-              background: var(--lp-soft-dark);
-
-                color: var(--lp-ivory);
-
-                  border: 1px solid var(--lp-border-dark);
-         }
-
-         /* ==========================================
-            BADGES
-            ========================================== */
-
-            .lp-badge {
-
-                  display: inline-flex;
-
-                    align-items: center;
-
-                      gap: .5rem;
-
-                        padding: .5rem 1rem;
-
-                          border-radius: 999px;
-
-                            background: rgba(176,141,87,.12);
-
-                              color: var(--lp-gold);
-
-                                font-size: 14px;
-
-                                  font-weight: 600;
-            }
-
-            /* ==========================================
-               TRUST ITEMS
-               ========================================== */
-
-               .lp-trust-grid {
-
-                  display: grid;
-
-                    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
-
-                      gap: 1rem;
-               }
-
-               .lp-trust-item {
-
-                  text-align: center;
-
-                    padding: 1rem;
-               }
-
-               .lp-trust-title {
-
-                  font-weight: 700;
-
-                    margin-top: .75rem;
-               }
-
-               /* ==========================================
-                  FORM ELEMENTS
-                  ========================================== */
-
-                  .lp-input,
-                  .lp-select,
-                  .lp-textarea {
-
-                      width: 100%;
-
-                        padding: 14px 16px;
-
-                          border-radius: var(--lp-radius-sm);
-
-                            border: 1px solid #d9d9d9;
-
-                              font-size: 16px;
-
-                                font-family: inherit;
-                  }
-
-                  .lp-input:focus,
-                  .lp-select:focus,
-                  .lp-textarea:focus {
-
-                      outline: none;
-
-                        border-color: var(--lp-gold);
-                  }
-
-                  /* ==========================================
-                     SECTION HEADINGS
-                     ========================================== */
-
-                     .lp-section-heading {
-
-                          max-width: 760px;
-
-                            margin: 0 auto 3rem;
-
+        display: inline-flex;
+          align-items: center;
+            justify-content: center;
+              gap: .5rem;
+                padding: 14px 28px;
+                  border: none;
+                    border-radius: var(--lp-radius-md);
+                      cursor: pointer;
+                        font-weight: 600;
+                          font-size: 16px;
+                            transition: var(--lp-transition);
                               text-align: center;
-                     }
-
-                     .lp-section-heading h2 {
-
-                          font-size: clamp(2rem,5vw,3.5rem);
-
-                            margin-bottom: 1rem;
-                     }
-
-                     .lp-section-heading p {
-
-                          color: var(--lp-text-light);
-
-                            font-size: 1.1rem;
-                     }
-
-                     /* ==========================================
-                        TESTIMONIAL CARD
-                        ========================================== */
-
-                        .lp-testimonial {
-
-                              padding: 24px;
-
-                                border-radius: var(--lp-radius-lg);
-
-                                  background: var(--lp-white);
-
-                                    box-shadow: var(--lp-shadow-sm);
-                        }
-
-                        .lp-testimonial-author {
-
-                              font-weight: 700;
-
-                                margin-top: 1rem;
-                        }
-
-                        /* ==========================================
-                           PRODUCT PRICE
-                           ========================================== */
-
-                           .lp-price {
-
-                              display: flex;
-
-                                align-items: center;
-
-                                  gap: .75rem;
-
-                                    flex-wrap: wrap;
-                           }
-
-                           .lp-price-current {
-
-                              font-size: 2rem;
-
-                                font-weight: 700;
-
-                                  color: var(--lp-gold-dark);
-                           }
-
-                           .lp-price-compare {
-
-                              text-decoration: line-through;
-
-                                color: #999;
-                           }
-
-                           /* ==========================================
-                              RESPONSIVE
-                              ========================================== */
-
-                              @media (max-width: 768px) {
-
-                                  .lp-btn {
-
-                                        width: 100%;
-                                  }
-
-                                    .lp-card {
-
-                                            padding: 18px;
-                                    }
-                                }
-                                    }
-                                  }
                               }
-                           }
-                           }
-                           }
-                        }
-                        }
-                     }
-                     }
-                     }
-                  }
-                  }
-               }
-               }
-               }
-            }
-         }
-         }
-      }
-      }/* ==========================================
-         HEADER PREMIUM
-         ========================================== */
 
-         .lp-header {
+                              .lp-btn-primary {
+                                background: var(--lp-gold);
+                                  color: var(--lp-white);
+                                    box-shadow: var(--lp-shadow-sm);
+                                    }
 
-              position: sticky;
+                                    .lp-btn-primary:hover {
+                                      background: var(--lp-gold-dark);
+                                        transform: translateY(-2px);
+                                        }
 
-                top: 0;
+                                        .lp-btn-secondary {
+                                          background: transparent;
+                                            border: 1px solid var(--lp-gold);
+                                              color: var(--lp-gold);
+                                              }
 
-                  z-index: 999;
+                                              .lp-btn-secondary:hover {
+                                                background: var(--lp-gold);
+                                                  color: var(--lp-white);
+                                                  }
 
-                    background: rgba(18,18,18,.95);
+                                                  /* ==========================================
+                                                     CARDS
+                                                     ========================================== */
 
-                      backdrop-filter: blur(10px);
+                                                     .lp-card {
+                                                       background: var(--lp-white);
+                                                         border-radius: var(--lp-radius-lg);
+                                                           padding: 24px;
+                                                             box-shadow: var(--lp-shadow-md);
+                                                             }
 
-                        border-bottom: 1px solid rgba(255,255,255,.05);
-         }
+                                                             .lp-card-dark {
+                                                               background: var(--lp-soft-dark);
+                                                                 color: var(--lp-ivory);
+                                                                   border: 1px solid var(--lp-border-dark);
+                                                                   }
 
-         .lp-header-wrapper {
+                                                                   /* ==========================================
+                                                                      BADGES
+                                                                      ========================================== */
 
-              display: flex;
+                                                                      .lp-badge {
+                                                                        display: inline-flex;
+                                                                          align-items: center;
+                                                                            gap: .5rem;
+                                                                              padding: .5rem 1rem;
+                                                                                border-radius: 999px;
+                                                                                  background: rgba(176,141,87,.12);
+                                                                                    color: var(--lp-gold);
+                                                                                      font-size: 14px;
+                                                                                        font-weight: 600;
+                                                                                        }
 
-                align-items: center;
+                                                                                        /* ==========================================
+                                                                                           TRUST ITEMS
+                                                                                           ========================================== */
 
-                  justify-content: space-between;
+                                                                                           .lp-trust-grid {
+                                                                                             display: grid;
+                                                                                               grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+                                                                                                 gap: 1rem;
+                                                                                                 }
 
-                    min-height: 80px;
-         }
+                                                                                                 .lp-trust-item {
+                                                                                                   text-align: center;
+                                                                                                     padding: 1rem;
+                                                                                                     }
 
-         .lp-header-nav {
+                                                                                                     .lp-trust-title {
+                                                                                                       font-weight: 700;
+                                                                                                         margin-top: .75rem;
+                                                                                                         }
 
-              display: flex;
+                                                                                                         /* ==========================================
+                                                                                                            FORM ELEMENTS
+                                                                                                            ========================================== */
 
-                gap: 2rem;
-         }
+                                                                                                            .lp-input,
+                                                                                                            .lp-select,
+                                                                                                            .lp-textarea {
+                                                                                                              width: 100%;
+                                                                                                                padding: 14px 16px;
+                                                                                                                  border-radius: var(--lp-radius-sm);
+                                                                                                                    border: 1px solid #d9d9d9;
+                                                                                                                      font-size: 16px;
+                                                                                                                        font-family: inherit;
+                                                                                                                        }
 
-         .lp-header-nav a {
+                                                                                                                        .lp-input:focus,
+                                                                                                                        .lp-select:focus,
+                                                                                                                        .lp-textarea:focus {
+                                                                                                                          outline: none;
+                                                                                                                            border-color: var(--lp-gold);
+                                                                                                                            }
 
-              color: var(--lp-ivory);
+                                                                                                                            /* ==========================================
+                                                                                                                               SECTION HEADINGS
+                                                                                                                               ========================================== */
 
-                font-weight: 500;
-         }
+                                                                                                                               .lp-section-heading {
+                                                                                                                                 max-width: 760px;
+                                                                                                                                   margin: 0 auto 3rem;
+                                                                                                                                     text-align: center;
+                                                                                                                                     }
 
-         .lp-logo-text {
+                                                                                                                                     .lp-section-heading h2 {
+                                                                                                                                       font-size: clamp(2rem,5vw,3.5rem);
+                                                                                                                                         margin-bottom: 1rem;
+                                                                                                                                         }
 
-              color: var(--lp-ivory);
+                                                                                                                                         .lp-section-heading p {
+                                                                                                                                           color: var(--lp-text-light);
+                                                                                                                                             font-size: 1.1rem;
+                                                                                                                                             }
 
-                font-family: var(--lp-font-heading);
+                                                                                                                                             /* ==========================================
+                                                                                                                                                TESTIMONIAL CARD
+                                                                                                                                                ========================================== */
 
-                  font-size: 2rem;
+                                                                                                                                                .lp-testimonial {
+                                                                                                                                                  padding: 24px;
+                                                                                                                                                    border-radius: var(--lp-radius-lg);
+                                                                                                                                                      background: var(--lp-white);
+                                                                                                                                                        box-shadow: var(--lp-shadow-sm);
+                                                                                                                                                        }
 
-                    font-weight: 600;
-         }
+                                                                                                                                                        .lp-testimonial-author {
+                                                                                                                                                          font-weight: 700;
+                                                                                                                                                            margin-top: 1rem;
+                                                                                                                                                            }
 
-         .lp-cart-button {
+                                                                                                                                                            /* ==========================================
+                                                                                                                                                               PRODUCT PRICE
+                                                                                                                                                               ========================================== */
 
-              display: inline-flex;
+                                                                                                                                                               .lp-price {
+                                                                                                                                                                 display: flex;
+                                                                                                                                                                   align-items: center;
+                                                                                                                                                                     gap: .75rem;
+                                                                                                                                                                       flex-wrap: wrap;
+                                                                                                                                                                       }
 
-                align-items: center;
+                                                                                                                                                                       .lp-price-current {
+                                                                                                                                                                         font-size: 2rem;
+                                                                                                                                                                           font-weight: 700;
+                                                                                                                                                                             color: var(--lp-gold-dark);
+                                                                                                                                                                             }
 
-                  justify-content: center;
+                                                                                                                                                                             .lp-price-compare {
+                                                                                                                                                                               text-decoration: line-through;
+                                                                                                                                                                                 color: #999;
+                                                                                                                                                                                 }
 
-                    padding: 12px 20px;
+                                                                                                                                                                                 /* ==========================================
+                                                                                                                                                                                    HEADER PREMIUM
+                                                                                                                                                                                    ========================================== */
 
-                      border-radius: var(--lp-radius-md);
+                                                                                                                                                                                    .lp-header {
+                                                                                                                                                                                      position: sticky;
+                                                                                                                                                                                        top: 0;
+                                                                                                                                                                                          z-index: 999;
+                                                                                                                                                                                            background: rgba(18,18,18,.95);
+                                                                                                                                                                                              backdrop-filter: blur(10px);
+                                                                                                                                                                                                border-bottom: 1px solid rgba(255,255,255,.05);
+                                                                                                                                                                                                }
 
-                        background: var(--lp-gold);
+                                                                                                                                                                                                .lp-header-wrapper {
+                                                                                                                                                                                                  display: flex;
+                                                                                                                                                                                                    align-items: center;
+                                                                                                                                                                                                      justify-content: space-between;
+                                                                                                                                                                                                        min-height: 80px;
+                                                                                                                                                                                                        }
 
-                          color: white;
+                                                                                                                                                                                                        .lp-header-nav {
+                                                                                                                                                                                                          display: flex;
+                                                                                                                                                                                                            gap: 2rem;
+                                                                                                                                                                                                            }
 
-                            font-weight: 600;
-         }
-         }
-         }
-         }
-         }
-         }
-         }
-      }
-      }
-      }
-   
-      /* ==========================================
-         FOOTER PREMIUM
-         ========================================== */
+                                                                                                                                                                                                            .lp-header-nav a {
+                                                                                                                                                                                                              color: var(--lp-ivory);
+                                                                                                                                                                                                                font-weight: 500;
+                                                                                                                                                                                                                }
 
-         .lp-footer {
+                                                                                                                                                                                                                .lp-logo-text {
+                                                                                                                                                                                                                  color: var(--lp-ivory);
+                                                                                                                                                                                                                    font-family: var(--lp-font-heading);
+                                                                                                                                                                                                                      font-size: 2rem;
+                                                                                                                                                                                                                        font-weight: 600;
+                                                                                                                                                                                                                        }
 
-              background: var(--lp-dark);
+                                                                                                                                                                                                                        .lp-cart-button {
+                                                                                                                                                                                                                          display: inline-flex;
+                                                                                                                                                                                                                            align-items: center;
+                                                                                                                                                                                                                              justify-content: center;
+                                                                                                                                                                                                                                padding: 12px 20px;
+                                                                                                                                                                                                                                  border-radius: var(--lp-radius-md);
+                                                                                                                                                                                                                                    background: var(--lp-gold);
+                                                                                                                                                                                                                                      color: white;
+                                                                                                                                                                                                                                        font-weight: 600;
+                                                                                                                                                                                                                                        }
 
-                color: var(--lp-ivory);
+                                                                                                                                                                                                                                        /* ==========================================
+                                                                                                                                                                                                                                           FOOTER PREMIUM
+                                                                                                                                                                                                                                           ========================================== */
 
-                  padding-top: 5rem;
+                                                                                                                                                                                                                                           .lp-footer {
+                                                                                                                                                                                                                                             background: var(--lp-dark);
+                                                                                                                                                                                                                                               color: var(--lp-ivory);
+                                                                                                                                                                                                                                                 padding-top: 5rem;
+                                                                                                                                                                                                                                                   padding-bottom: 2rem;
+                                                                                                                                                                                                                                                   }
 
-                    padding-bottom: 2rem;
-         }
+                                                                                                                                                                                                                                                   .lp-footer-grid {
+                                                                                                                                                                                                                                                     display: grid;
+                                                                                                                                                                                                                                                       grid-template-columns: 2fr 1fr 1fr 1fr;
+                                                                                                                                                                                                                                                         gap: 2rem;
+                                                                                                                                                                                                                                                         }
 
-         .lp-footer-grid {
+                                                                                                                                                                                                                                                         .lp-footer h3,
+                                                                                                                                                                                                                                                         .lp-footer h4 {
+                                                                                                                                                                                                                                                           color: var(--lp-ivory);
+                                                                                                                                                                                                                                                           }
 
-              display: grid;
+                                                                                                                                                                                                                                                           .lp-footer ul {
+                                                                                                                                                                                                                                                             list-style: none;
+                                                                                                                                                                                                                                                             }
 
-                grid-template-columns: 2fr 1fr 1fr 1fr;
+                                                                                                                                                                                                                                                             .lp-footer li {
+                                                                                                                                                                                                                                                               margin-bottom: .75rem;
+                                                                                                                                                                                                                                                               }
 
-                  gap: 2rem;
-         }
+                                                                                                                                                                                                                                                               .lp-footer a {
+                                                                                                                                                                                                                                                                 color: rgba(255,255,255,.8);
+                                                                                                                                                                                                                                                                 }
 
-         .lp-footer h3,
-         .lp-footer h4 {
+                                                                                                                                                                                                                                                                 .lp-footer-bottom {
+                                                                                                                                                                                                                                                                   margin-top: 3rem;
+                                                                                                                                                                                                                                                                     padding-top: 2rem;
+                                                                                                                                                                                                                                                                       border-top: 1px solid rgba(255,255,255,.1);
+                                                                                                                                                                                                                                                                         text-align: center;
+                                                                                                                                                                                                                                                                         }
 
-              color: var(--lp-ivory);
-         }
+                                                                                                                                                                                                                                                                         /* ==========================================
+                                                                                                                                                                                                                                                                            HOME HERO
+                                                                                                                                                                                                                                                                            ========================================== */
 
-         .lp-footer ul {
+                                                                                                                                                                                                                                                                            .lp-home-hero {
+                                                                                                                                                                                                                                                                              padding: 5rem 0;
+                                                                                                                                                                                                                                                                                background: linear-gradient(
+                                                                                                                                                                                                                                                                                    180deg,
+                                                                                                                                                                                                                                                                                        #121212 0%,
+                                                                                                                                                                                                                                                                                            #1c1c1c 100%
+                                                                                                                                                                                                                                                                                              );
+                                                                                                                                                                                                                                                                                                color: white;
+                                                                                                                                                                                                                                                                                                }
 
-              list-style: none;
-         }
+                                                                                                                                                                                                                                                                                                .lp-home-hero .lp-container {
+                                                                                                                                                                                                                                                                                                  display: grid;
+                                                                                                                                                                                                                                                                                                    grid-template-columns: 1.1fr .9fr;
+                                                                                                                                                                                                                                                                                                      gap: 4rem;
+                                                                                                                                                                                                                                                                                                        align-items: center;
+                                                                                                                                                                                                                                                                                                        }
 
-         .lp-footer li {
+                                                                                                                                                                                                                                                                                                        .lp-home-hero h1 {
+                                                                                                                                                                                                                                                                                                          font-size: clamp(2.5rem,6vw,4.5rem);
+                                                                                                                                                                                                                                                                                                            margin: 1.5rem 0;
+                                                                                                                                                                                                                                                                                                            }
 
-              margin-bottom: .75rem;
-         }
+                                                                                                                                                                                                                                                                                                            .lp-home-hero__subtitle {
+                                                                                                                                                                                                                                                                                                              font-size: 1.2rem;
+                                                                                                                                                                                                                                                                                                                opacity: .9;
+                                                                                                                                                                                                                                                                                                                  max-width: 650px;
+                                                                                                                                                                                                                                                                                                                  }
 
-         .lp-footer a {
+                                                                                                                                                                                                                                                                                                                  .lp-home-hero__actions {
+                                                                                                                                                                                                                                                                                                                    display: flex;
+                                                                                                                                                                                                                                                                                                                      gap: 1rem;
+                                                                                                                                                                                                                                                                                                                        margin-top: 2rem;
+                                                                                                                                                                                                                                                                                                                        }
 
-              color: rgba(255,255,255,.8);
-         }
+                                                                                                                                                                                                                                                                                                                        .lp-home-hero__trust {
+                                                                                                                                                                                                                                                                                                                          display: flex;
+                                                                                                                                                                                                                                                                                                                            flex-wrap: wrap;
+                                                                                                                                                                                                                                                                                                                              gap: 1rem;
+                                                                                                                                                                                                                                                                                                                                margin-top: 2rem;
+                                                                                                                                                                                                                                                                                                                                  font-size: .95rem;
+                                                                                                                                                                                                                                                                                                                                    opacity: .85;
+                                                                                                                                                                                                                                                                                                                                    }
 
-         .lp-footer-bottom {
+                                                                                                                                                                                                                                                                                                                                    .lp-home-hero__placeholder {
+                                                                                                                                                                                                                                                                                                                                      min-height: 500px;
+                                                                                                                                                                                                                                                                                                                                        border-radius: var(--lp-radius-xl);
+                                                                                                                                                                                                                                                                                                                                          border: 2px dashed rgba(255,255,255,.2);
+                                                                                                                                                                                                                                                                                                                                            display: flex;
+                                                                                                                                                                                                                                                                                                                                              align-items: center;
+                                                                                                                                                                                                                                                                                                                                                justify-content: center;
+                                                                                                                                                                                                                                                                                                                                                }
 
-              margin-top: 3rem;
+                                                                                                                                                                                                                                                                                                                                                /* ==========================================
+                                                                                                                                                                                                                                                                                                                                                   RESPONSIVE
+                                                                                                                                                                                                                                                                                                                                                   ========================================== */
 
-                padding-top: 2rem;
+                                                                                                                                                                                                                                                                                                                                                   @media (max-width: 768px) {
 
-                  border-top: 1px solid rgba(255,255,255,.1);
+                                                                                                                                                                                                                                                                                                                                                     .lp-btn {
+                                                                                                                                                                                                                                                                                                                                                         width: 100%;
+                                                                                                                                                                                                                                                                                                                                                           }
 
-                    text-align: center;
-         }
+                                                                                                                                                                                                                                                                                                                                                             .lp-card {
+                                                                                                                                                                                                                                                                                                                                                                 padding: 18px;
+                                                                                                                                                                                                                                                                                                                                                                   }
 
-         @media (max-width: 768px) {
+                                                                                                                                                                                                                                                                                                                                                                     .lp-footer-grid {
+                                                                                                                                                                                                                                                                                                                                                                         grid-template-columns: 1fr;
+                                                                                                                                                                                                                                                                                                                                                                           }
 
-              .lp-footer-grid {
+                                                                                                                                                                                                                                                                                                                                                                             .lp-home-hero .lp-container {
+                                                                                                                                                                                                                                                                                                                                                                                 grid-template-columns: 1fr;
+                                                                                                                                                                                                                                                                                                                                                                                   }
 
-                    grid-template-columns: 1fr;
-              }
+                                                                                                                                                                                                                                                                                                                                                                                     .lp-home-hero__actions {
+                                                                                                                                                                                                                                                                                                                                                                                         flex-direction: column;
+                                                                                                                                                                                                                                                                                                                                                                                           }
 
-            }
-              }
-         }
-         }
-         }
-         }
-         }
-         }
-         }
-         }
+                                                                                                                                                                                                                                                                                                                                                                                           }

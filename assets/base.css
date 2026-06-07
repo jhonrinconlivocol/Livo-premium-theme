@@ -5,206 +5,298 @@
 
       :root {
 
-          /* COLORS */
+        /* COLORS */
 
-            --lp-gold: #B08D57;
-              --lp-gold-light: #C8A876;
-                --lp-gold-dark: #8E7045;
+          --lp-gold: #B08D57;
+            --lp-gold-light: #C8A876;
+              --lp-gold-dark: #8E7045;
 
-                  --lp-dark: #121212;
-                    --lp-soft-dark: #1C1C1C;
-                      --lp-border-dark: #2A2A2A;
+                --lp-dark: #121212;
+                  --lp-soft-dark: #1C1C1C;
+                    --lp-border-dark: #2A2A2A;
 
-                        --lp-ivory: #F5F1E8;
-                          --lp-white: #FFFFFF;
+                      --lp-ivory: #F5F1E8;
+                        --lp-white: #FFFFFF;
 
-                            --lp-science: #4A6A7D;
-                              --lp-green: #5E8C61;
+                          --lp-science: #4A6A7D;
+                            --lp-green: #5E8C61;
 
-                                --lp-text: #2A2A2A;
-                                  --lp-text-light: #6B7280;
+                              --lp-text: #2A2A2A;
+                                --lp-text-light: #6B7280;
 
-                                    --lp-success: #16A34A;
-                                      --lp-warning: #F59E0B;
-                                        --lp-danger: #DC2626;
+                                  --lp-success: #16A34A;
+                                    --lp-warning: #F59E0B;
+                                      --lp-danger: #DC2626;
 
-                                          /* TYPOGRAPHY */
+                                        /* TYPOGRAPHY */
 
-                                            --lp-font-heading: "Cormorant Garamond", serif;
-                                              --lp-font-body: "Inter", sans-serif;
+                                          --lp-font-heading: "Cormorant Garamond", serif;
+                                            --lp-font-body: "Inter", sans-serif;
 
-                                                /* CONTAINERS */
+                                              /* CONTAINERS */
 
-                                                  --lp-container-sm: 768px;
-                                                    --lp-container-md: 1200px;
-                                                      --lp-container-lg: 1400px;
+                                                --lp-container-sm: 768px;
+                                                  --lp-container-md: 1200px;
+                                                    --lp-container-lg: 1400px;
 
-                                                        /* SPACING */
+                                                      /* SPACING */
 
-                                                          --lp-space-xs: 0.5rem;
-                                                            --lp-space-sm: 1rem;
-                                                              --lp-space-md: 1.5rem;
-                                                                --lp-space-lg: 3rem;
-                                                                  --lp-space-xl: 5rem;
-                                                                    --lp-space-2xl: 7rem;
+                                                        --lp-space-xs: 0.5rem;
+                                                          --lp-space-sm: 1rem;
+                                                            --lp-space-md: 1.5rem;
+                                                              --lp-space-lg: 3rem;
+                                                                --lp-space-xl: 5rem;
+                                                                  --lp-space-2xl: 7rem;
 
-                                                                      /* RADIUS */
+                                                                    /* RADIUS */
 
-                                                                        --lp-radius-sm: 8px;
-                                                                          --lp-radius-md: 16px;
-                                                                            --lp-radius-lg: 24px;
-                                                                              --lp-radius-xl: 32px;
+                                                                      --lp-radius-sm: 8px;
+                                                                        --lp-radius-md: 16px;
+                                                                          --lp-radius-lg: 24px;
+                                                                            --lp-radius-xl: 32px;
 
-                                                                                /* SHADOWS */
+                                                                              /* SHADOWS */
 
-                                                                                  --lp-shadow-sm: 0 2px 8px rgba(0,0,0,.08);
+                                                                                --lp-shadow-sm: 0 2px 8px rgba(0,0,0,.08);
 
-                                                                                    --lp-shadow-md: 0 10px 30px rgba(0,0,0,.12);
+                                                                                  --lp-shadow-md: 0 10px 30px rgba(0,0,0,.12);
 
-                                                                                      --lp-shadow-lg: 0 20px 60px rgba(0,0,0,.15);
+                                                                                    --lp-shadow-lg: 0 20px 60px rgba(0,0,0,.15);
 
-                                                                                        /* TRANSITIONS */
+                                                                                      /* TRANSITIONS */
 
-                                                                                          --lp-transition: all .3s ease;
+                                                                                        --lp-transition: all .3s ease;
 
-      }
+                                                                                        }
 
-      /* ==========================================
-         RESET
-         ========================================== */
+                                                                                        /* ==========================================
+                                                                                           RESET
+                                                                                           ========================================== */
 
-         *,
-         *::before,
-         *::after {
-              box-sizing: border-box;
-         }
+                                                                                           *,
+                                                                                           *::before,
+                                                                                           *::after {
+                                                                                             box-sizing: border-box;
+                                                                                             }
 
-         html {
-              scroll-behavior: smooth;
-         }
+                                                                                             html {
+                                                                                               scroll-behavior: smooth;
+                                                                                               }
 
-         body {
+                                                                                               body {
 
-              margin: 0;
+                                                                                                 margin: 0;
 
-                font-family: var(--lp-font-body);
+                                                                                                   font-family: var(--lp-font-body);
 
-                  color: var(--lp-text);
+                                                                                                     color: var(--lp-text);
 
-                    background: var(--lp-white);
+                                                                                                       background: var(--lp-white);
 
-                      line-height: 1.6;
+                                                                                                         line-height: 1.6;
 
-                        -webkit-font-smoothing: antialiased;
+                                                                                                           -webkit-font-smoothing: antialiased;
 
-                          text-rendering: optimizeLegibility;
-         }
+                                                                                                             text-rendering: optimizeLegibility;
+                                                                                                             }
 
-         img {
-              max-width: 100%;
-                display: block;
-         }
+                                                                                                             img {
+                                                                                                               max-width: 100%;
+                                                                                                                 display: block;
+                                                                                                                 }
 
-         a {
-              text-decoration: none;
-                color: inherit;
-         }
+                                                                                                                 a {
+                                                                                                                   text-decoration: none;
+                                                                                                                     color: inherit;
+                                                                                                                     }
 
-         button {
-              font-family: inherit;
-         }
+                                                                                                                     button {
+                                                                                                                       font-family: inherit;
+                                                                                                                       }
 
-         ul,
-         ol {
-              margin: 0;
-                padding: 0;
-         }
+                                                                                                                       input,
+                                                                                                                       select,
+                                                                                                                       textarea {
+                                                                                                                         font-family: inherit;
+                                                                                                                         }
 
-         h1,
-         h2,
-         h3,
-         h4,
-         h5,
-         h6 {
+                                                                                                                         ul,
+                                                                                                                         ol {
+                                                                                                                           margin: 0;
+                                                                                                                             padding: 0;
+                                                                                                                             }
 
-              margin: 0 0 1rem;
+                                                                                                                             h1,
+                                                                                                                             h2,
+                                                                                                                             h3,
+                                                                                                                             h4,
+                                                                                                                             h5,
+                                                                                                                             h6 {
 
-                font-family: var(--lp-font-heading);
+                                                                                                                               margin: 0 0 1rem;
 
-                  line-height: 1.1;
+                                                                                                                                 font-family: var(--lp-font-heading);
 
-                    color: inherit;
-         }
+                                                                                                                                   line-height: 1.1;
 
-         p {
-              margin: 0 0 1rem;
-         }
+                                                                                                                                     color: inherit;
+                                                                                                                                     }
 
-         /* ==========================================
-            CONTAINER
-            ========================================== */
+                                                                                                                                     p {
+                                                                                                                                       margin: 0 0 1rem;
+                                                                                                                                       }
 
-            .lp-container {
+                                                                                                                                       /* ==========================================
+                                                                                                                                          TYPOGRAPHY
+                                                                                                                                          ========================================== */
 
-                  width: 100%;
+                                                                                                                                          h1 {
+                                                                                                                                            font-size: clamp(2.5rem, 5vw, 4.5rem);
+                                                                                                                                            }
 
-                    max-width: var(--lp-container-md);
+                                                                                                                                            h2 {
+                                                                                                                                              font-size: clamp(2rem, 4vw, 3.5rem);
+                                                                                                                                              }
 
-                      margin: 0 auto;
+                                                                                                                                              h3 {
+                                                                                                                                                font-size: clamp(1.5rem, 3vw, 2.25rem);
+                                                                                                                                                }
 
-                        padding-left: 1rem;
-                          padding-right: 1rem;
-            }
+                                                                                                                                                h4 {
+                                                                                                                                                  font-size: 1.25rem;
+                                                                                                                                                  }
 
-            /* ==========================================
-               SECTIONS
-               ========================================== */
+                                                                                                                                                  small {
+                                                                                                                                                    font-size: .875rem;
+                                                                                                                                                    }
 
-               .lp-section {
+                                                                                                                                                    /* ==========================================
+                                                                                                                                                       CONTAINER
+                                                                                                                                                       ========================================== */
 
-                  padding-top: var(--lp-space-xl);
+                                                                                                                                                       .lp-container {
 
-                    padding-bottom: var(--lp-space-xl);
-               }
+                                                                                                                                                         width: 100%;
 
-               /* ==========================================
-                  HELPERS
-                  ========================================== */
+                                                                                                                                                           max-width: var(--lp-container-md);
 
-                  .lp-dark {
+                                                                                                                                                             margin: 0 auto;
 
-                      background: var(--lp-dark);
+                                                                                                                                                               padding-left: 1rem;
 
-                        color: var(--lp-ivory);
-                  }
+                                                                                                                                                                 padding-right: 1rem;
+                                                                                                                                                                 }
 
-                  .lp-ivory {
+                                                                                                                                                                 /* ==========================================
+                                                                                                                                                                    SECTIONS
+                                                                                                                                                                    ========================================== */
 
-                      background: var(--lp-ivory);
+                                                                                                                                                                    .lp-section {
 
-                        color: var(--lp-text);
-                  }
+                                                                                                                                                                      padding-top: var(--lp-space-xl);
 
-                  .lp-text-center {
-                      text-align: center;
-                  }
+                                                                                                                                                                        padding-bottom: var(--lp-space-xl);
+                                                                                                                                                                        }
 
-                  .lp-hidden {
-                      display: none;
-                  }
-                  }
-                  }
-                  }
-                  }
-               }
-            }
-         }
-         }
-         }
-         }
-         }
-         }
-         }
-         }
-         }
-      }
+                                                                                                                                                                        /* ==========================================
+                                                                                                                                                                           BACKGROUNDS
+                                                                                                                                                                           ========================================== */
+
+                                                                                                                                                                           .lp-dark {
+
+                                                                                                                                                                             background: var(--lp-dark);
+
+                                                                                                                                                                               color: var(--lp-ivory);
+                                                                                                                                                                               }
+
+                                                                                                                                                                               .lp-ivory {
+
+                                                                                                                                                                                 background: var(--lp-ivory);
+
+                                                                                                                                                                                   color: var(--lp-text);
+                                                                                                                                                                                   }
+
+                                                                                                                                                                                   .lp-white {
+
+                                                                                                                                                                                     background: var(--lp-white);
+
+                                                                                                                                                                                       color: var(--lp-text);
+                                                                                                                                                                                       }
+
+                                                                                                                                                                                       /* ==========================================
+                                                                                                                                                                                          HELPERS
+                                                                                                                                                                                          ========================================== */
+
+                                                                                                                                                                                          .lp-text-center {
+                                                                                                                                                                                            text-align: center;
+                                                                                                                                                                                            }
+
+                                                                                                                                                                                            .lp-text-left {
+                                                                                                                                                                                              text-align: left;
+                                                                                                                                                                                              }
+
+                                                                                                                                                                                              .lp-text-right {
+                                                                                                                                                                                                text-align: right;
+                                                                                                                                                                                                }
+
+                                                                                                                                                                                                .lp-hidden {
+                                                                                                                                                                                                  display: none;
+                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                  /* ==========================================
+                                                                                                                                                                                                     ACCESSIBILITY
+                                                                                                                                                                                                     ========================================== */
+
+                                                                                                                                                                                                     :focus-visible {
+
+                                                                                                                                                                                                       outline: 2px solid var(--lp-gold);
+
+                                                                                                                                                                                                         outline-offset: 2px;
+                                                                                                                                                                                                         }
+
+                                                                                                                                                                                                         /* ==========================================
+                                                                                                                                                                                                            SELECTION
+                                                                                                                                                                                                            ========================================== */
+
+                                                                                                                                                                                                            ::selection {
+
+                                                                                                                                                                                                              background: var(--lp-gold);
+
+                                                                                                                                                                                                                color: var(--lp-white);
+                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                /* ==========================================
+                                                                                                                                                                                                                   SCROLLBAR
+                                                                                                                                                                                                                   ========================================== */
+
+                                                                                                                                                                                                                   ::-webkit-scrollbar {
+                                                                                                                                                                                                                     width: 8px;
+                                                                                                                                                                                                                     }
+
+                                                                                                                                                                                                                     ::-webkit-scrollbar-track {
+                                                                                                                                                                                                                       background: #f3f3f3;
+                                                                                                                                                                                                                       }
+
+                                                                                                                                                                                                                       ::-webkit-scrollbar-thumb {
+                                                                                                                                                                                                                         background: var(--lp-gold);
+                                                                                                                                                                                                                           border-radius: 100px;
+                                                                                                                                                                                                                           }
+
+                                                                                                                                                                                                                           ::-webkit-scrollbar-thumb:hover {
+                                                                                                                                                                                                                             background: var(--lp-gold-dark);
+                                                                                                                                                                                                                             }
+
+                                                                                                                                                                                                                             /* ==========================================
+                                                                                                                                                                                                                                RESPONSIVE
+                                                                                                                                                                                                                                ========================================== */
+
+                                                                                                                                                                                                                                @media (max-width: 768px) {
+
+                                                                                                                                                                                                                                  .lp-section {
+
+                                                                                                                                                                                                                                      padding-top: 4rem;
+
+                                                                                                                                                                                                                                          padding-bottom: 4rem;
+                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                            }
