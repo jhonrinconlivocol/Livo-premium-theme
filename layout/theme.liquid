@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+
+<head>
+
+  <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+      <meta name="theme-color" content="{{ settings.primary_color }}">
+
+        <link rel="canonical" href="{{ canonical_url }}">
+
+          {% if settings.favicon != blank %}
+              <link
+                    rel="icon"
+                          href="{{ settings.favicon | image_url: width: 32 }}"
+                              >
+                                {% endif %}
+
+                                  <title>
+
+                                      {% if page_title %}
+                                            {{ page_title }}
+                                                  {% unless page_title contains shop.name %}
+                                                          | {{ shop.name }}
+                                                                {% endunless %}
+                                                                    {% else %}
+                                                                          {{ shop.name }}
+                                                                              {% endif %}
+
+                                                                                </title>
+
+                                                                                  {% if page_description %}
+                                                                                      <meta
+                                                                                            name="description"
+                                                                                                  content="{{ page_description | escape }}"
+                                                                                                      >
+                                                                                                        {% endif %}
+
+                                                                                                          {{ content_for_header }}
+
+                                                                                                            {{ 'base.css' | asset_url | stylesheet_tag }}
+                                                                                                              {{ 'components.css' | asset_url | stylesheet_tag }}
+                                                                                                                {{ 'utilities.css' | asset_url | stylesheet_tag }}
+
+                                                                                                                </head>
+
+                                                                                                                <body>
+
+                                                                                                                  {% section 'header-premium' %}
+
+                                                                                                                    <main id="MainContent">
+
+                                                                                                                        {{ content_for_layout }}
+
+                                                                                                                          </main>
+
+                                                                                                                            {% section 'footer-premium' %}
+
+                                                                                                                              {{ 'global.js' | asset_url | script_tag }}
+
+                                                                                                                              </body>
+
+                                                                                                                              </html>

@@ -287,7 +287,159 @@
          }
          }
       }
+      }/* ==========================================
+         HEADER PREMIUM
+         ========================================== */
+
+         .lp-header {
+
+              position: sticky;
+
+                top: 0;
+
+                  z-index: 999;
+
+                    background: rgba(18,18,18,.95);
+
+                      backdrop-filter: blur(10px);
+
+                        border-bottom: 1px solid rgba(255,255,255,.05);
+         }
+
+         .lp-header-wrapper {
+
+              display: flex;
+
+                align-items: center;
+
+                  justify-content: space-between;
+
+                    min-height: 80px;
+         }
+
+         .lp-header-nav {
+
+              display: flex;
+
+                gap: 2rem;
+         }
+
+         .lp-header-nav a {
+
+              color: var(--lp-ivory);
+
+                font-weight: 500;
+         }
+
+         .lp-logo-text {
+
+              color: var(--lp-ivory);
+
+                font-family: var(--lp-font-heading);
+
+                  font-size: 2rem;
+
+                    font-weight: 600;
+         }
+
+         .lp-cart-button {
+
+              display: inline-flex;
+
+                align-items: center;
+
+                  justify-content: center;
+
+                    padding: 12px 20px;
+
+                      border-radius: var(--lp-radius-md);
+
+                        background: var(--lp-gold);
+
+                          color: white;
+
+                            font-weight: 600;
+         }
+         }
+         }
+         }
+         }
+         }
+         }
       }
       }
       }
-      }
+   
+      /* ==========================================
+         FOOTER PREMIUM
+         ========================================== */
+
+         .lp-footer {
+
+              background: var(--lp-dark);
+
+                color: var(--lp-ivory);
+
+                  padding-top: 5rem;
+
+                    padding-bottom: 2rem;
+         }
+
+         .lp-footer-grid {
+
+              display: grid;
+
+                grid-template-columns: 2fr 1fr 1fr 1fr;
+
+                  gap: 2rem;
+         }
+
+         .lp-footer h3,
+         .lp-footer h4 {
+
+              color: var(--lp-ivory);
+         }
+
+         .lp-footer ul {
+
+              list-style: none;
+         }
+
+         .lp-footer li {
+
+              margin-bottom: .75rem;
+         }
+
+         .lp-footer a {
+
+              color: rgba(255,255,255,.8);
+         }
+
+         .lp-footer-bottom {
+
+              margin-top: 3rem;
+
+                padding-top: 2rem;
+
+                  border-top: 1px solid rgba(255,255,255,.1);
+
+                    text-align: center;
+         }
+
+         @media (max-width: 768px) {
+
+              .lp-footer-grid {
+
+                    grid-template-columns: 1fr;
+              }
+
+            }
+              }
+         }
+         }
+         }
+         }
+         }
+         }
+         }
+         }

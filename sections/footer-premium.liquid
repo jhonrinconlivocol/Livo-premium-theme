@@ -1,0 +1,79 @@
+<footer class="lp-footer">
+
+  <div class="lp-container">
+
+      <div class="lp-footer-grid">
+
+            <div class="lp-footer-brand">
+
+                    <h3>{{ shop.name }}</h3>
+
+                            <p>
+                                      Bienestar premium, ciencia y confianza para acompañarte en tus objetivos.
+                                              </p>
+
+                                                    </div>
+
+                                                          <div class="lp-footer-links">
+
+                                                                  <h4>Empresa</h4>
+
+                                                                          <ul>
+                                                                                    <li><a href="/pages/nosotros">Nosotros</a></li>
+                                                                                              <li><a href="/pages/contacto">Contacto</a></li>
+                                                                                                        <li><a href="/blogs/news">Academia</a></li>
+                                                                                                                </ul>
+
+                                                                                                                      </div>
+
+                                                                                                                            <div class="lp-footer-links">
+
+                                                                                                                                    <h4>Ayuda</h4>
+
+                                                                                                                                            <ul>
+                                                                                                                                                      <li><a href="/pages/politica-de-envios">Envíos</a></li>
+                                                                                                                                                                <li><a href="/pages/politica-de-cambios-y-devoluciones">Devoluciones</a></li>
+                                                                                                                                                                          <li><a href="/pages/preguntas-frecuentes">Preguntas Frecuentes</a></li>
+                                                                                                                                                                                  </ul>
+
+                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                              <div class="lp-footer-contact">
+
+                                                                                                                                                                                                      <h4>Atención</h4>
+
+                                                                                                                                                                                                              <p>{{ settings.trust_message_3 }}</p>
+
+                                                                                                                                                                                                                      {% if settings.whatsapp_number != blank %}
+                                                                                                                                                                                                                                <a
+                                                                                                                                                                                                                                            href="https://wa.me/{{ settings.whatsapp_number }}"
+                                                                                                                                                                                                                                                        target="_blank"
+                                                                                                                                                                                                                                                                    rel="noopener"
+                                                                                                                                                                                                                                                                              >
+                                                                                                                                                                                                                                                                                          WhatsApp
+                                                                                                                                                                                                                                                                                                    </a>
+                                                                                                                                                                                                                                                                                                            {% endif %}
+
+                                                                                                                                                                                                                                                                                                                  </div>
+
+                                                                                                                                                                                                                                                                                                                      </div>
+
+                                                                                                                                                                                                                                                                                                                          <div class="lp-footer-bottom">
+
+                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                        © {{ 'now' | date: '%Y' }} {{ shop.name }}. Todos los derechos reservados.
+                                                                                                                                                                                                                                                                                                                                              </p>
+
+                                                                                                                                                                                                                                                                                                                                                  </div>
+
+                                                                                                                                                                                                                                                                                                                                                    </div>
+
+                                                                                                                                                                                                                                                                                                                                                    </footer>
+
+                                                                                                                                                                                                                                                                                                                                                    {% schema %}
+                                                                                                                                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                                                                                                                                          "name": "Livo Premium Footer",
+                                                                                                                                                                                                                                                                                                                                                            "settings": []
+                                                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                                                    {% endschema %}
+                                                                                                                                                                                                                                                                                                                                                    }
