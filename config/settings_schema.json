@@ -1,116 +1,95 @@
 [
       {
-            "name": "Livo Premium - General",
-                "settings": [
-                          {
-                                    "type": "image_picker",
-                                            "id": "logo",
-                                                    "label": "Logo principal"
-                          },
-                                {
-                                            "type": "image_picker",
-                                                    "id": "favicon",
-                                                            "label": "Favicon"
-                                },
-                                      {
-                                                "type": "text",
-                                                        "id": "whatsapp_number",
-                                                                "label": "Número de WhatsApp",
-                                                                        "info": "Formato: 573001234567"
-                                      }
-                                    ]
-                                },
-                                  {
-                                        "name": "Livo Premium - Branding",
-                                            "settings": [
-                                                      {
-                                                                "type": "color",
-                                                                        "id": "primary_color",
-                                                                                "label": "Color principal",
-                                                                                        "default": "#B08D57"
-                                                      },
-                                                            {
-                                                                        "type": "color",
-                                                                                "id": "secondary_color",
-                                                                                        "label": "Color secundario",
-                                                                                                "default": "#121212"
-                                                            },
-                                                                  {
-                                                                            "type": "color",
-                                                                                    "id": "accent_color",
-                                                                                            "label": "Color de acento",
-                                                                                                    "default": "#5E8C61"
-                                                                  }
-                                                                ]
-                                                            },
-                                                              {
-                                                                    "name": "Livo Premium - Confianza",
-                                                                        "settings": [
-                                                                                  {
-                                                                                            "type": "text",
-                                                                                                    "id": "trust_message_1",
-                                                                                                            "label": "Mensaje de confianza 1",
-                                                                                                                    "default": "Pago Contra Entrega"
-                                                                                  },
-                                                                                        {
+          "name": "Livo Premium - General",
+              "settings": [
+                    {
+                            "type": "image_picker",
+                                    "id": "logo",
+                                            "label": "Logo principal"
+                                                  },
+                                                        {
+                                                                "type": "image_picker",
+                                                                        "id": "favicon",
+                                                                                "label": "Favicon"
+                                                                                      },
+                                                                                            {
                                                                                                     "type": "text",
-                                                                                                            "id": "trust_message_2",
-                                                                                                                    "label": "Mensaje de confianza 2",
-                                                                                                                            "default": "Envíos a toda Colombia"
-                                                                                        },
-                                                                                              {
-                                                                                                        "type": "text",
-                                                                                                                "id": "trust_message_3",
-                                                                                                                        "label": "Mensaje de confianza 3",
-                                                                                                                                "default": "Atención por WhatsApp"
-                                                                                              }
-                                                                                            ]
-                                                                                        },
-                                                                                          {
-                                                                                                "name": "Livo Premium - Redes Sociales",
-                                                                                                    "settings": [
-                                                                                                              {
-                                                                                                                        "type": "url",
-                                                                                                                                "id": "facebook_url",
-                                                                                                                                        "label": "Facebook"
-                                                                                                              },
-                                                                                                                    {
-                                                                                                                                "type": "url",
-                                                                                                                                        "id": "instagram_url",
-                                                                                                                                                "label": "Instagram"
-                                                                                                                    },
-                                                                                                                          {
-                                                                                                                                    "type": "url",
-                                                                                                                                            "id": "tiktok_url",
-                                                                                                                                                    "label": "TikTok"
-                                                                                                                          },
-                                                                                                                                {
-                                                                                                                                            "type": "url",
-                                                                                                                                                    "id": "youtube_url",
-                                                                                                                                                            "label": "YouTube"
-                                                                                                                                }
-                                                                                                                            ]
-                                                                                                                        }
-                                                                                                                    ]
-                                                                                                                                }
-                                                                                                                          }
-                                                                                                                    }
-                                                                                                              }
-                                                                                                    ]
-                                                                                          }
-                                                                                              }
-                                                                                        }
-                                                                                  }
-                                                                        ]
-                                                              }
-                                                                  }
-                                                            }
-                                                      }
-                                            ]
-                                  }
-                                      }
-                                }
-                          }
-                ]
-      }
-]
+                                                                                                            "id": "whatsapp_number",
+                                                                                                                    "label": "Número de WhatsApp",
+                                                                                                                            "info": "Formato: 573001234567"
+                                                                                                                                  }
+                                                                                                                                      ]
+                                                                                                                                        },
+                                                                                                                                          {
+                                                                                                                                              "name": "Livo Premium - Branding",
+                                                                                                                                                  "settings": [
+                                                                                                                                                        {
+                                                                                                                                                                "type": "color",
+                                                                                                                                                                        "id": "primary_color",
+                                                                                                                                                                                "label": "Color principal",
+                                                                                                                                                                                        "default": "#B08D57"
+                                                                                                                                                                                              },
+                                                                                                                                                                                                    {
+                                                                                                                                                                                                            "type": "color",
+                                                                                                                                                                                                                    "id": "secondary_color",
+                                                                                                                                                                                                                            "label": "Color secundario",
+                                                                                                                                                                                                                                    "default": "#121212"
+                                                                                                                                                                                                                                          },
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                        "type": "color",
+                                                                                                                                                                                                                                                                "id": "accent_color",
+                                                                                                                                                                                                                                                                        "label": "Color de acento",
+                                                                                                                                                                                                                                                                                "default": "#5E8C61"
+                                                                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                                                                          ]
+                                                                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                                                                              {
+                                                                                                                                                                                                                                                                                                  "name": "Livo Premium - Confianza",
+                                                                                                                                                                                                                                                                                                      "settings": [
+                                                                                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                                                                                    "type": "text",
+                                                                                                                                                                                                                                                                                                                            "id": "trust_message_1",
+                                                                                                                                                                                                                                                                                                                                    "label": "Mensaje de confianza 1",
+                                                                                                                                                                                                                                                                                                                                            "default": "Pago Contra Entrega"
+                                                                                                                                                                                                                                                                                                                                                  },
+                                                                                                                                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                                                                                                                                                "type": "text",
+                                                                                                                                                                                                                                                                                                                                                                        "id": "trust_message_2",
+                                                                                                                                                                                                                                                                                                                                                                                "label": "Mensaje de confianza 2",
+                                                                                                                                                                                                                                                                                                                                                                                        "default": "Envíos a toda Colombia"
+                                                                                                                                                                                                                                                                                                                                                                                              },
+                                                                                                                                                                                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                                                                                                                                                                                            "type": "text",
+                                                                                                                                                                                                                                                                                                                                                                                                                    "id": "trust_message_3",
+                                                                                                                                                                                                                                                                                                                                                                                                                            "label": "Mensaje de confianza 3",
+                                                                                                                                                                                                                                                                                                                                                                                                                                    "default": "Atención por WhatsApp"
+                                                                                                                                                                                                                                                                                                                                                                                                                                          }
+                                                                                                                                                                                                                                                                                                                                                                                                                                              ]
+                                                                                                                                                                                                                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                  {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                      "name": "Livo Premium - Redes Sociales",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                          "settings": [
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "type": "url",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                "id": "facebook_url",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "label": "Facebook"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            "type": "url",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "id": "instagram_url",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            "label": "Instagram"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                "type": "url",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "id": "tiktok_url",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                "label": "TikTok"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "type": "url",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            "id": "youtube_url",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "label": "YouTube"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ]
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ]
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
