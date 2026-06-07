@@ -1,0 +1,22 @@
+{% assign current_variant = product.selected_or_first_available_variant %}
+
+<div class="lp-buy-box">
+
+  <button
+      type="submit"
+          name="add"
+              class="lp-btn lp-btn-primary lp-buy-button"
+                  {% unless current_variant.available %}
+                        disabled
+                            {% endunless %}
+                              >
+
+                                  {% if current_variant.available %}
+                                        Comprar Ahora
+                                            {% else %}
+                                                  Producto Agotado
+                                                      {% endif %}
+
+                                                        </button>
+
+                                                        </div>

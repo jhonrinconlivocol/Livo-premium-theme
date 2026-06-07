@@ -1,0 +1,41 @@
+{% liquid
+  assign current_variant = product.selected_or_first_available_variant
+    assign current_price = current_variant.price
+      assign compare_price = current_variant.compare_at_price
+      %}
+
+      <div class="lp-product-price">
+
+        {% if compare_price > current_price %}
+
+            <div class="lp-price-top">
+
+                  <span class="lp-price-compare">
+                          {{ compare_price | money }}
+                                </span>
+
+                                      <span class="lp-price-save">
+                                              Ahorra {{ compare_price | minus: current_price | money }}
+                                                    </span>
+
+                                                        </div>
+
+                                                          {% endif %}
+
+                                                            <div class="lp-price-main">
+
+                                                                <span class="lp-price-current">
+                                                                      {{ current_price | money }}
+                                                                          </span>
+
+                                                                            </div>
+
+                                                                              {% assign daily_cost = current_price | divided_by: 30 %}
+
+                                                                                <div class="lp-price-daily">
+
+                                                                                    Menos de {{ daily_cost | money }} al día
+
+                                                                                      </div>
+
+                                                                                      </div>
