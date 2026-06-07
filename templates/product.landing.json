@@ -1,0 +1,46 @@
+{
+      "sections": {
+          "hero": {
+                "type": "lp-hero"
+                    },
+                        "benefits": {
+                              "type": "lp-benefits"
+                                  },
+                                      "how_it_works": {
+                                            "type": "lp-how-it-works"
+                                                },
+                                                    "ingredients": {
+                                                          "type": "lp-ingredients"
+                                                              },
+                                                                  "results": {
+                                                                        "type": "lp-results"
+                                                                            },
+                                                                                "offer": {
+                                                                                      "type": "lp-offer"
+                                                                                          },
+                                                                                              "testimonials": {
+                                                                                                    "type": "lp-testimonials"
+                                                                                                        },
+                                                                                                            "guarantee": {
+                                                                                                                  "type": "lp-guarantee"
+                                                                                                                      },
+                                                                                                                          "faq": {
+                                                                                                                                "type": "lp-faq"
+                                                                                                                                    },
+                                                                                                                                        "final_cta": {
+                                                                                                                                              "type": "lp-final-cta"
+                                                                                                                                                  }
+                                                                                                                                                    },
+                                                                                                                                                      "order": [
+                                                                                                                                                          "hero",
+                                                                                                                                                              "benefits",
+                                                                                                                                                                  "how_it_works",
+                                                                                                                                                                      "ingredients",
+                                                                                                                                                                          "results",
+                                                                                                                                                                              "offer",
+                                                                                                                                                                                  "testimonials",
+                                                                                                                                                                                      "guarantee",
+                                                                                                                                                                                          "faq",
+                                                                                                                                                                                              "final_cta"
+                                                                                                                                                                                                ]
+                                                                                                                                                                                                }

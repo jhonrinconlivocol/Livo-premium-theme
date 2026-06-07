@@ -569,4 +569,101 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             border: 2px dashed rgba(176,141,87,.25);
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               background: rgba(176,141,87,.05);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              }                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              }  
+/* ==========================================
+   LP HERO
+   ========================================== */
+
+   .lp-product-hero__grid {
+
+     display: grid;
+
+       grid-template-columns: 1fr 1fr;
+
+         gap: 4rem;
+
+           align-items: start;
+           }
+
+           .lp-product-title {
+
+             font-size: clamp(2.5rem,5vw,4rem);
+
+               margin-top: 1rem;
+
+                 margin-bottom: 1rem;
+                 }
+
+                 .lp-product-subtitle {
+
+                   font-size: 1.1rem;
+
+                     color: var(--lp-text-light);
+
+                       margin-bottom: 2rem;
+                       }
+
+                       .lp-product-benefits {
+
+                         display: flex;
+
+                           flex-direction: column;
+
+                             gap: .75rem;
+
+                               margin-bottom: 2rem;
+                               }
+
+                               .lp-product-benefit {
+
+                                 font-weight: 500;
+                                 }
+
+                                 .lp-featured-offer {
+
+                                   margin-top: 2rem;
+
+                                     margin-bottom: 2rem;
+
+                                       padding: 1.5rem;
+
+                                         border-radius: var(--lp-radius-lg);
+
+                                           background: rgba(176,141,87,.08);
+
+                                             border: 2px solid rgba(176,141,87,.25);
+                                             }
+
+                                             .lp-featured-offer__label {
+
+                                               color: var(--lp-gold);
+
+                                                 font-weight: 700;
+
+                                                   margin-bottom: .5rem;
+                                                   }
+
+                                                   .lp-featured-offer__title {
+
+                                                     font-size: 1.4rem;
+
+                                                       font-weight: 700;
+
+                                                         margin-bottom: .5rem;
+                                                         }
+
+                                                         .lp-featured-offer__text {
+
+                                                           color: var(--lp-text-light);
+                                                           }
+
+                                                           @media (max-width: 991px) {
+
+                                                             .lp-product-hero__grid {
+
+                                                                 grid-template-columns: 1fr;
+
+                                                                     gap: 2rem;
+                                                                       }
+
+                                                                       }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
