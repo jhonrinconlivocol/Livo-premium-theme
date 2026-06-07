@@ -1,0 +1,36 @@
+<div class="lp-gallery">
+
+  {% if product.images.size > 0 %}
+
+      <div class="lp-gallery-slider">
+
+            {% for image in product.images %}
+
+                    <div class="lp-gallery-slide">
+
+                              {{
+                                            image
+                                                        | image_url: width: 1200
+                                                                    | image_tag:
+                                                                                  loading: 'lazy',
+                                                                                                class: 'lp-gallery-image'
+                              }}
+
+                                      </div>
+
+                                            {% endfor %}
+
+                                                </div>
+
+                                                  {% else %}
+
+                                                      <div class="lp-gallery-placeholder">
+
+                                                            Imagen del producto
+
+                                                                </div>
+
+                                                                  {% endif %}
+
+                                                                  </div>
+                              }}
