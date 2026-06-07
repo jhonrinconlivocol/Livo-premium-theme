@@ -666,4 +666,271 @@
                                                                      gap: 2rem;
                                                                        }
 
-                                                                       }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+                                                                       }    
+ /* ==========================================
+    LP OFFER
+    ========================================== */
+
+    .lp-offer-grid {
+
+      display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+
+          gap: 1.5rem;
+
+            margin-top: 3rem;
+            }
+ttom
+            .lp-offer-card {
+
+              position: relative;
+
+                background: white;
+
+                  border-radius: var(--lp-radius-lg);
+
+                    padding: 2rem;
+
+                      box-shadow: var(--lp-shadow-sm);
+
+                        border: 1px solid #eee;
+
+                          transition: var(--lp-transition);
+                          }
+
+                          .lp-offer-card:hover {
+
+                            transform: translateY(-4px);
+
+                              box-shadow: var(--lp-shadow-md);
+                              }
+
+                              .lp-offer-card--featured {
+
+                                border: 2px solid var(--lp-gold);
+
+                                  transform: scale(1.03);
+                                  }
+
+                                  .lp-offer-badge {
+
+                                    display: inline-block;
+
+                                      margin-bottom: 1rem;
+
+                                        background: var(--lp-gold);
+
+                                          color: white;
+
+                                            padding: .4rem .8rem;
+
+                                              border-radius: 999px;
+
+                                                font-size: .8rem;
+
+                                                  font-weight: 700;
+                                                  }
+
+                                                  .lp-offer-badge-fire {
+
+                                                    background: #e67e22;
+                                                    }
+
+                                                    .lp-offer-name {
+
+                                                      font-size: 1.4rem;
+
+                                                        font-weight: 700;
+
+                                                          margin-bottom: .75rem;
+                                                          }
+
+                                                          .lp-offer-description {
+
+                                                            color: var(--lp-text-light);
+                                                            }
+
+                                                            @media (max-width: 991px) {
+
+                                                              .lp-offer-grid {
+
+                                                                  grid-template-columns: 1fr;
+                                                                    }
+
+                                                                      .lp-offer-card--featured {
+
+                                                                          transform: none;
+                                                                            }
+
+                                                                            }   
+/* ==========================================
+   LP TESTIMONIALS
+   ========================================== */
+
+   .lp-testimonials-grid {
+
+     display: grid;
+
+       grid-template-columns: repeat(3, 1fr);
+
+         gap: 2rem;
+
+           margin-top: 3rem;
+           }
+
+           .lp-testimonial-card {
+
+             background: white;
+
+               border-radius: var(--lp-radius-lg);
+
+                 padding: 2rem;
+
+                   box-shadow: var(--lp-shadow-sm);
+
+                     border: 1px solid #eee;
+                     }
+
+                     .lp-stars {
+
+                       color: var(--lp-gold);
+
+                         font-size: 1.2rem;
+
+                           margin-bottom: 1rem;
+                           }
+
+                           .lp-testimonial-text {
+
+                             margin-bottom: 1.5rem;
+
+                               line-height: 1.8;
+                               }
+
+                               .lp-testimonial-author {
+
+                                 font-weight: 700;
+                                 }
+
+                                 .lp-testimonial-meta {
+
+                                   color: var(--lp-text-light);
+
+                                     font-size: .9rem;
+
+                                       margin-top: .25rem;
+                                       }
+
+                                       @media (max-width: 991px) {
+
+                                         .lp-testimonials-grid {
+
+                                             grid-template-columns: 1fr;
+                                               }
+
+                                               }
+/* ==========================================
+   LP FAQ
+   ========================================== */
+
+   .lp-faq {
+
+     max-width: 900px;
+
+       margin: 3rem auto 0;
+       }
+
+       .lp-faq-item {
+
+         margin-bottom: 1rem;
+
+           border: 1px solid rgba(255,255,255,.08);
+
+             border-radius: var(--lp-radius-lg);
+
+               overflow: hidden;
+
+                 background: rgba(255,255,255,.02);
+                 }
+
+                 .lp-faq-item summary {
+
+                   cursor: pointer;
+
+                     padding: 1.25rem 1.5rem;
+
+                       font-weight: 600;
+
+                         list-style: none;
+                         }
+
+                         .lp-faq-item summary::-webkit-details-marker {
+
+                           display: none;
+                           }
+
+                           .lp-faq-answer {
+
+                             padding: 0 1.5rem 1.5rem;
+
+                               color: var(--lp-text-light);
+
+                                 line-height: 1.8;
+                                 }
+ /* ==========================================
+    LP BENEFITS
+    ========================================== */
+
+    .lp-benefits-grid {
+
+      display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+
+          gap: 2rem;
+
+            margin-top: 3rem;
+            }
+
+            .lp-benefit-card {
+
+              padding: 2rem;
+
+                border-radius: var(--lp-radius-lg);
+
+                  background: rgba(255,255,255,.03);
+
+                    border: 1px solid rgba(255,255,255,.08);
+
+                      text-align: center;
+                      }
+
+                      .lp-benefit-icon {
+
+                        font-size: 2rem;
+
+                          margin-bottom: 1rem;
+                          }
+
+                          .lp-benefit-card h3 {
+
+                            margin-bottom: 1rem;
+                            }
+
+                            .lp-benefit-card p {
+
+                              color: var(--lp-text-light);
+
+                                line-height: 1.7;
+                                }
+
+                                @media (max-width: 991px) {
+
+                                  .lp-benefits-grid {
+
+                                      grid-template-columns: 1fr;
+                                        }
+
+                                        }                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
