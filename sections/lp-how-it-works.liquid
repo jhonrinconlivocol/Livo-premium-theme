@@ -1,31 +1,56 @@
+<section class="lp-how-it-works-section lp-section">
+
+  <div class="lp-container">
+
+    <div class="lp-section-heading">
+      <h2>¿Cómo funciona?</h2>
+      <p>Sigue estos sencillos pasos.</p>
+    </div>
+
+    {% assign pasos = product.metafields.custom.how_it_works.value %}
+
+    {% if pasos != blank %}
+
+      <div class="lp-how-it-works-grid">
+
+        {% for paso in pasos %}
+
+          <div class="lp-step-card">
+
+            {% if paso.icono != blank %}
+              <div class="lp-step-icon">
+                {{ paso.icono }}
+              </div>
+            {% endif %}
+
+            {% if paso.titulo != blank %}
+              <h3 class="lp-step-title">
+                {{ paso.titulo }}
+              </h3>
+            {% endif %}
+
+            {% if paso.descripcion != blank %}
+              <div class="lp-step-description">
+                {{ paso.descripcion }}
+              </div>
+            {% endif %}
+
+          </div>
+
+        {% endfor %}
+
+      </div>
+
+    {% endif %}
+
+  </div>
+
+</section>
+
 {% schema %}
 {
   "name": "LP How It Works",
-  "max_blocks": 10,
-  "blocks": [
-    {
-      "type": "step",
-      "name": "Paso",
-      "settings": [
-        {
-          "type": "text",
-          "id": "step_title",
-          "label": "Título"
-        },
-        {
-          "type": "textarea",
-          "id": "step_description",
-          "label": "Descripción"
-        },
-        {
-          "type": "text",
-          "id": "step_icon",
-          "label": "Icono Emoji",
-          "default": "✅"
-        }
-      ]
-    }
-  ],
+  "settings": [],
   "presets": [
     {
       "name": "LP How It Works"
