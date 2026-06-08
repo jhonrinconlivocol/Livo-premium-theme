@@ -1,0 +1,38 @@
+{
+  "sections": {
+    "hero": {
+      "type": "lp-hero"
+    },
+    "offer": {
+      "type": "lp-offer"
+    },
+    "product_form": {
+      "type": "lp-product-form"
+    },
+    "benefits": {
+      "type": "lp-benefits"
+    },
+    "testimonials": {
+      "type": "lp-testimonials"
+    },
+    "faq": {
+      "type": "lp-faq"
+    },
+    "guarantee": {
+      "type": "lp-guarantee"
+    },
+    "final_cta": {
+      "type": "lp-final-cta"
+    }
+  },
+  "order": [
+    "hero",
+    "offer",
+    "product_form",
+    "benefits",
+    "testimonials",
+    "faq",
+    "guarantee",
+    "final_cta"
+  ]
+}
