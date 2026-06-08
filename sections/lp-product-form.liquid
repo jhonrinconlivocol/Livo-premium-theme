@@ -1,0 +1,117 @@
+<section
+  id="lp-product-form"
+  class="lp-product-form-section lp-section"
+>
+
+  <div class="lp-container">
+
+    <div class="lp-product-layout">
+
+      <!-- GALERÍA -->
+
+      <div class="lp-product-gallery-column">
+
+        {% render 'product-gallery' %}
+
+      </div>
+
+      <!-- INFO -->
+
+      <div class="lp-product-info-column">
+
+        <h2 class="lp-product-title">
+          {{ product.title }}
+        </h2>
+
+        {% render 'product-price' %}
+
+        {% render 'trust-badges' %}
+
+        <!-- OFERTAS -->
+
+        <div class="lp-bundle-selector">
+
+          <h3 class="lp-bundle-title">
+            Selecciona tu oferta
+          </h3>
+
+          <div class="lp-bundle-options">
+
+            <label class="lp-bundle-option">
+
+              <input
+                type="radio"
+                name="bundle"
+                checked
+              >
+
+              <span>
+                1 Unidad
+              </span>
+
+            </label>
+
+            <label class="lp-bundle-option">
+
+              <input
+                type="radio"
+                name="bundle"
+              >
+
+              <span>
+                2 Unidades
+              </span>
+
+            </label>
+
+            <label class="lp-bundle-option lp-bundle-best">
+
+              <input
+                type="radio"
+                name="bundle"
+              >
+
+              <span>
+                ⭐ Paga 2 Lleva 3
+              </span>
+
+            </label>
+
+            <label class="lp-bundle-option lp-bundle-hot">
+
+              <input
+                type="radio"
+                name="bundle"
+              >
+
+              <span>
+                🔥 Paga 3 Lleva 5
+              </span>
+
+            </label>
+
+          </div>
+
+        </div>
+
+        {% render 'buy-buttons' %}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "LP Product Form",
+  "settings": [],
+  "presets": [
+    {
+      "name": "LP Product Form"
+    }
+  ]
+}
+{% endschema %}
