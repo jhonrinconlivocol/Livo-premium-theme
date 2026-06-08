@@ -2,7 +2,6 @@
 <html lang="{{ request.locale.iso_code }}">
 
 <head>
- {%- capture ecom_header_content -%}{%- render 'ecom_header' -%}{%- endcapture -%}{%- unless ecom_header_content contains 'Liquid error' -%}{{ ecom_header_content }}{%- endunless -%}
 
   <meta charset="utf-8">
 
@@ -47,20 +46,6 @@
 
                                                                                                                 </head>
 
-                                                                                                                <body>
-
-                                                                                                                  {% section 'header-premium' %}
-
-                                                                                                                    <main id="MainContent">
-
-                                                                                                                        {{ content_for_layout }}
-
-                                                                                                                          </main>
-
-                                                                                                                            {% section 'footer-premium' %}
-
-                                                                                                                              {{ 'global.js' | asset_url | script_tag }}
-
-                                                                                                                              {%- capture ecom_footer_content -%}{%- render 'ecom_footer' -%}{%- endcapture -%}{%- unless ecom_footer_content contains 'Liquid error' -%}{{ ecom_footer_content }}{%- endunless -%}</body>
+                                                                                                                <body>{{ content_for_layout }}</body>
 
                                                                                                                               </html>
