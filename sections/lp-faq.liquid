@@ -1,71 +1,29 @@
-<section class="lp-faq-section lp-section">
-
-  <div class="lp-container">
-
-      <div class="lp-section-heading">
-
-            <h2>Preguntas frecuentes</h2>
-
-                  <p>
-                          Resolvemos las dudas más comunes antes de tu compra.
-                                </p>
-
-                                    </div>
-
-                                        <div class="lp-faq">
-
-                                              <details class="lp-faq-item" open>
-                                                      <summary>¿Realizan envíos a toda Colombia?</summary>
-                                                              <div class="lp-faq-answer">
-                                                                        Sí. Realizamos envíos a todos los departamentos, ciudades y cabeceras municipales del país.
-                                                                                </div>
-                                                                                      </details>
-
-                                                                                            <details class="lp-faq-item">
-                                                                                                    <summary>¿Puedo pagar contra entrega?</summary>
-                                                                                                            <div class="lp-faq-answer">
-                                                                                                                      Sí. En la mayoría de zonas del país contamos con la opción de pago contra entrega.
-                                                                                                                              </div>
-                                                                                                                                    </details>
-
-                                                                                                                                          <details class="lp-faq-item">
-                                                                                                                                                  <summary>¿Cuánto tarda el envío?</summary>
-                                                                                                                                                          <div class="lp-faq-answer">
-                                                                                                                                                                    Generalmente entre 2 y 7 días hábiles dependiendo de la ubicación.
-                                                                                                                                                                            </div>
-                                                                                                                                                                                  </details>
-
-                                                                                                                                                                                        <details class="lp-faq-item">
-                                                                                                                                                                                                <summary>¿El producto tiene garantía?</summary>
-                                                                                                                                                                                                        <div class="lp-faq-answer">
-                                                                                                                                                                                                                  Sí. Todos nuestros productos cuentan con garantía de satisfacción según las condiciones indicadas en la oferta.
-                                                                                                                                                                                                                          </div>
-                                                                                                                                                                                                                                </details>
-
-                                                                                                                                                                                                                                      <details class="lp-faq-item">
-                                                                                                                                                                                                                                              <summary>¿Cómo sé cuál oferta elegir?</summary>
-                                                                                                                                                                                                                                                      <div class="lp-faq-answer">
-                                                                                                                                                                                                                                                                La mayoría de clientes elige la opción "Paga 2 Lleva 3" por su excelente relación entre ahorro y cantidad.
-                                                                                                                                                                                                                                                                        </div>
-                                                                                                                                                                                                                                                                              </details>
-
-                                                                                                                                                                                                                                                                                  </div>
-
-                                                                                                                                                                                                                                                                                    </div>
-
-                                                                                                                                                                                                                                                                                    </section>
-
-                                                                                                                                                                                                                                                                                    {% schema %}
-                                                                                                                                                                                                                                                                                    {
-                                                                                                                                                                                                                                                                                          "name": "LP FAQ",
-                                                                                                                                                                                                                                                                                            "settings": [],
-                                                                                                                                                                                                                                                                                              "presets": [
-                                                                                                                                                                                                                                                                                                    {
-                                                                                                                                                                                                                                                                                                              "name": "LP FAQ"
-                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                              ]
-                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                    {% endschema %}
-                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                              ]
-                                                                                                                                                                                                                                                                                    }
+{% schema %}
+{
+  "name": "LP FAQ",
+  "max_blocks": 20,
+  "blocks": [
+    {
+      "type": "faq_item",
+      "name": "Pregunta FAQ",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Pregunta"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Respuesta"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "LP FAQ"
+    }
+  ]
+}
+{% endschema %}
