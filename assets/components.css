@@ -1136,3 +1136,26 @@ ttom
   }
 
 }
+.lp-bundle-content {
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+width: 100%;
+}
+
+.lp-bundle-name {
+
+font-weight: 600;
+}
+
+.lp-bundle-price {
+
+font-weight: 700;
+
+color: var(--lp-gold);
+}
+
