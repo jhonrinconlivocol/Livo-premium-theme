@@ -1,41 +1,61 @@
 {% liquid
-  assign current_variant = product.selected_or_first_available_variant
-    assign current_price = current_variant.price
-      assign compare_price = current_variant.compare_at_price
-      %}
+assign current_variant = product.selected_or_first_available_variant
+assign current_price = current_variant.price
+assign compare_price = current_variant.compare_at_price
+%}
 
-      <div class="lp-product-price">
+<div
+  class="lp-product-price"
+  data-price-wrapper
+>
 
-        {% if compare_price > current_price %}
+{% if compare_price > current_price %}
 
-            <div class="lp-price-top">
+```
+<div
+  class="lp-price-top"
+  data-price-top
+>
 
-                  <span class="lp-price-compare">
-                          {{ compare_price | money }}
-                                </span>
+  <span
+    class="lp-price-compare"
+    data-compare-price
+  >
+    {{ compare_price | money }}
+  </span>
 
-                                      <span class="lp-price-save">
-                                              Ahorra {{ compare_price | minus: current_price | money }}
-                                                    </span>
+  <span
+    class="lp-price-save"
+    data-price-save
+  >
+    Ahorra {{ compare_price | minus: current_price | money }}
+  </span>
 
-                                                        </div>
+</div>
+```
 
-                                                          {% endif %}
+{% endif %}
 
-                                                            <div class="lp-price-main">
+  <div class="lp-price-main">
 
-                                                                <span class="lp-price-current">
-                                                                      {{ current_price | money }}
-                                                                          </span>
+```
+<span
+  class="lp-price-current"
+  data-current-price
+>
+  {{ current_price | money }}
+</span>
+```
 
-                                                                            </div>
+  </div>
 
-                                                                              {% assign daily_cost = current_price | divided_by: 30 %}
+{% assign daily_cost = current_price | divided_by: 30 %}
 
-                                                                                <div class="lp-price-daily">
+  <div
+    class="lp-price-daily"
+    data-daily-price
+  >
+    Menos de {{ daily_cost | money }} al día
+  </div>
 
-                                                                                    Menos de {{ daily_cost | money }} al día
-
-                                                                                      </div>
-
-                                                                                      </div>
+</div>
