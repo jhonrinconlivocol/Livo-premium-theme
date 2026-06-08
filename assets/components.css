@@ -932,5 +932,63 @@ ttom
                                       grid-template-columns: 1fr;
                                         }
 
-                                        }                                
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+                                        }     
+
+     /* ==========================================
+   LP GUARANTEE
+========================================== */
+
+.lp-guarantee-card {
+
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 3rem;
+
+  border-radius: var(--lp-radius-xl);
+
+  text-align: center;
+
+  background: rgba(176,141,87,.06);
+
+  border: 1px solid rgba(176,141,87,.15);
+}
+
+.lp-guarantee-icon {
+
+  font-size: 3rem;
+
+  margin-bottom: 1rem;
+}
+
+.lp-guarantee-text {
+
+  max-width: 700px;
+
+  margin: 1.5rem auto;
+
+  color: var(--lp-text-light);
+}
+
+.lp-guarantee-features {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+
+.lp-guarantee-feature {
+
+  padding: .75rem 1rem;
+
+  border-radius: 999px;
+
+  background: rgba(176,141,87,.10);
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
