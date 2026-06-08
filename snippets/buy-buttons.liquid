@@ -2,21 +2,33 @@
 
 <div class="lp-buy-box">
 
-  <button
-      type="submit"
-          name="add"
-              class="lp-btn lp-btn-primary lp-buy-button"
-                  {% unless current_variant.available %}
-                        disabled
-                            {% endunless %}
-                              >
+  <form method="post" action="/cart/add">
 
-                                  {% if current_variant.available %}
-                                        Comprar Ahora
-                                            {% else %}
-                                                  Producto Agotado
-                                                      {% endif %}
+```
+<input
+  type="hidden"
+  name="id"
+  value="{{ current_variant.id }}"
+>
 
-                                                        </button>
+<button
+  type="submit"
+  name="add"
+  class="lp-btn lp-btn-primary lp-buy-button"
+  {% unless current_variant.available %}
+    disabled
+  {% endunless %}
+>
 
-                                                        </div>
+  {% if current_variant.available %}
+    Comprar Ahora
+  {% else %}
+    Producto Agotado
+  {% endif %}
+
+</button>
+```
+
+  </form>
+
+</div>
