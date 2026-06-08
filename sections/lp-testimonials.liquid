@@ -1,104 +1,43 @@
-<section class="lp-testimonials-section lp-section">
-
-  <div class="lp-container">
-
-      <div class="lp-section-heading">
-
-            <h2>
-                    Lo que dicen nuestros clientes
-                          </h2>
-
-                                <p>
-                                        Miles de personas ya han confiado en nuestros productos.
-                                              </p>
-
-                                                  </div>
-
-                                                      <div class="lp-testimonials-grid">
-
-                                                            <!-- TESTIMONIO 1 -->
-
-                                                                  <div class="lp-testimonial-card">
-
-                                                                          <div class="lp-stars">
-                                                                                    ★★★★★
-                                                                                            </div>
-
-                                                                                                    <p class="lp-testimonial-text">
-                                                                                                              Desde que empecé a usarlo me siento mucho mejor y con más confianza en mi día a día.
-                                                                                                                      </p>
-
-                                                                                                                              <div class="lp-testimonial-author">
-                                                                                                                                        María Gómez
-                                                                                                                                                </div>
-
-                                                                                                                                                        <div class="lp-testimonial-meta">
-                                                                                                                                                                  Bogotá • Cliente Verificado
-                                                                                                                                                                          </div>
-
-                                                                                                                                                                                </div>
-
-                                                                                                                                                                                      <!-- TESTIMONIO 2 -->
-
-                                                                                                                                                                                            <div class="lp-testimonial-card">
-
-                                                                                                                                                                                                    <div class="lp-stars">
-                                                                                                                                                                                                              ★★★★★
-                                                                                                                                                                                                                      </div>
-
-                                                                                                                                                                                                                              <p class="lp-testimonial-text">
-                                                                                                                                                                                                                                        La calidad me sorprendió. Además llegó rápido y pude pagar contra entrega.
-                                                                                                                                                                                                                                                </p>
-
-                                                                                                                                                                                                                                                        <div class="lp-testimonial-author">
-                                                                                                                                                                                                                                                                  Carlos Rodríguez
-                                                                                                                                                                                                                                                                          </div>
-
-                                                                                                                                                                                                                                                                                  <div class="lp-testimonial-meta">
-                                                                                                                                                                                                                                                                                            Medellín • Cliente Verificado
-                                                                                                                                                                                                                                                                                                    </div>
-
-                                                                                                                                                                                                                                                                                                          </div>
-
-                                                                                                                                                                                                                                                                                                                <!-- TESTIMONIO 3 -->
-
-                                                                                                                                                                                                                                                                                                                      <div class="lp-testimonial-card">
-
-                                                                                                                                                                                                                                                                                                                              <div class="lp-stars">
-                                                                                                                                                                                                                                                                                                                                        ★★★★★
-                                                                                                                                                                                                                                                                                                                                                </div>
-
-                                                                                                                                                                                                                                                                                                                                                        <p class="lp-testimonial-text">
-                                                                                                                                                                                                                                                                                                                                                                  Probé varios productos similares y este ha sido el que más me ha gustado.
-                                                                                                                                                                                                                                                                                                                                                                          </p>
-
-                                                                                                                                                                                                                                                                                                                                                                                  <div class="lp-testimonial-author">
-                                                                                                                                                                                                                                                                                                                                                                                            Laura Sánchez
-                                                                                                                                                                                                                                                                                                                                                                                                    </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                            <div class="lp-testimonial-meta">
-                                                                                                                                                                                                                                                                                                                                                                                                                      Cali • Cliente Verificado
-                                                                                                                                                                                                                                                                                                                                                                                                                              </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                          </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                          </section>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                          {% schema %}
-                                                                                                                                                                                                                                                                                                                                                                                                                                          {
-                                                                                                                                                                                                                                                                                                                                                                                                                                              "name": "LP Testimonials",
-                                                                                                                                                                                                                                                                                                                                                                                                                                                "settings": [],
-                                                                                                                                                                                                                                                                                                                                                                                                                                                  "presets": [
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                  "name": "LP Testimonials"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                  ]
-                                                                                                                                                                                                                                                                                                                                                                                                                                          }
-                                                                                                                                                                                                                                                                                                                                                                                                                                          {% endschema %}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                  ]
-                                                                                                                                                                                                                                                                                                                                                                                                                                          }
+{% schema %}
+{
+  "name": "LP Testimonials",
+  "max_blocks": 20,
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonio",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Nombre"
+        },
+        {
+          "type": "text",
+          "id": "city",
+          "label": "Ciudad"
+        },
+        {
+          "type": "range",
+          "id": "rating",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "default": 5,
+          "label": "Estrellas"
+        },
+        {
+          "type": "textarea",
+          "id": "testimonial",
+          "label": "Testimonio"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "LP Testimonials"
+    }
+  ]
+}
+{% endschema %}
