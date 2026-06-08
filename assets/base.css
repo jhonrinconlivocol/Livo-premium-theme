@@ -14,6 +14,15 @@
                 --lp-dark: #121212;
                   --lp-soft-dark: #1C1C1C;
                     --lp-border-dark: #2A2A2A;
+                     --lp-card-bg: #1A1A1A;
+
+--lp-card-border: rgba(255,255,255,.08);
+
+--lp-card-hover: rgba(255,255,255,.03);
+
+--lp-section-dark: #121212;
+
+--lp-section-alt: #171717;
 
                       --lp-ivory: #F5F1E8;
                         --lp-white: #FFFFFF;
@@ -22,7 +31,7 @@
                             --lp-green: #5E8C61;
 
                               --lp-text: #2A2A2A;
-                                --lp-text-light: #6B7280;
+                                --lp-text-light: rgba(245,241,232,.72);
 
                                   --lp-success: #16A34A;
                                     --lp-warning: #F59E0B;
@@ -62,6 +71,8 @@
                                                                                   --lp-shadow-md: 0 10px 30px rgba(0,0,0,.12);
 
                                                                                     --lp-shadow-lg: 0 20px 60px rgba(0,0,0,.15);
+                                                                                       --lp-shadow-gold:
+0 10px 30px rgba(176,141,87,.15);
 
                                                                                       /* TRANSITIONS */
 
@@ -300,3 +311,18 @@
                                                                                                                                                                                                                                             }
 
                                                                                                                                                                                                                                             }
+.lp-section-heading {
+
+  max-width: 800px;
+
+  margin: 0 auto 3rem;
+
+  text-align: center;
+}
+
+.lp-section-heading p {
+
+  color: var(--lp-text-light);
+
+  font-size: 1.125rem;
+}
