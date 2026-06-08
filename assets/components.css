@@ -991,4 +991,60 @@ ttom
   border-radius: 999px;
 
   background: rgba(176,141,87,.10);
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+}  
+
+/* ==========================================
+   LP FINAL CTA
+========================================== */
+
+.lp-final-cta-card {
+
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  text-align: center;
+
+  padding: 4rem 2rem;
+
+  border-radius: var(--lp-radius-xl);
+
+  background: linear-gradient(
+    135deg,
+    rgba(176,141,87,.08),
+    rgba(176,141,87,.02)
+  );
+
+  border: 1px solid rgba(176,141,87,.15);
+}
+
+.lp-final-cta-text {
+
+  max-width: 700px;
+
+  margin: 1.5rem auto;
+
+  color: var(--lp-text-light);
+}
+
+.lp-final-cta-points {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 1rem;
+
+  margin: 2rem 0;
+}
+
+.lp-final-cta-point {
+
+  padding: .75rem 1rem;
+
+  border-radius: 999px;
+
+  background: rgba(176,141,87,.10);
+}
