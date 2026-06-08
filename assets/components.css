@@ -1048,3 +1048,91 @@ ttom
 
   background: rgba(176,141,87,.10);
 }
+
+/* ==========================================
+   LP PRODUCT FORM
+========================================== */
+
+.lp-product-layout {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 4rem;
+
+  align-items: start;
+}
+
+.lp-product-title {
+
+  margin-bottom: 1rem;
+}
+
+.lp-bundle-selector {
+
+  margin: 2rem 0;
+}
+
+.lp-bundle-title {
+
+  margin-bottom: 1rem;
+}
+
+.lp-bundle-options {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1rem;
+}
+
+.lp-bundle-option {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  padding: 1rem;
+
+  border-radius: var(--lp-radius-md);
+
+  border: 1px solid rgba(255,255,255,.10);
+
+  cursor: pointer;
+
+  transition: var(--lp-transition);
+}
+
+.lp-bundle-option:hover {
+
+  border-color: var(--lp-gold);
+}
+
+.lp-bundle-best {
+
+  border-color: var(--lp-gold);
+
+  background: rgba(176,141,87,.08);
+}
+
+.lp-bundle-hot {
+
+  border-color: rgba(255,140,0,.4);
+
+  background: rgba(255,140,0,.08);
+}
+
+@media (max-width: 991px) {
+
+  .lp-product-layout {
+
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+  }
+
+}
