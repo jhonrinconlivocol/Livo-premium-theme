@@ -56,6 +56,12 @@
               type="radio"
               name="id"
               value="{{ variant.id }}"
+data-variant-id="{{ variant.id }}"
+  data-variant-price="{{ variant.price }}"
+  data-variant-title="{{ variant.title }}"
+  {% if variant.compare_at_price %}
+  data-variant-compare="{{ variant.compare_at_price }}"
+  {% endif %}
               {% if forloop.first %}
                 checked
               {% endif %}
