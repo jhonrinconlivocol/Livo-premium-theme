@@ -5,99 +5,104 @@
 
   <div class="lp-container">
 
-    <div class="lp-product-layout">
+```
+<div class="lp-product-layout">
 
-      <!-- GALERÍA -->
+  <!-- GALERÍA -->
 
-      <div class="lp-product-gallery-column">
+  <div class="lp-product-gallery-column">
 
-        {% render 'product-gallery' %}
+    {% render 'product-gallery' %}
 
-      </div>
+  </div>
 
-      <!-- INFO -->
+  <!-- INFO -->
 
-      <div class="lp-product-info-column">
+  <div class="lp-product-info-column">
 
-        <h2 class="lp-product-title">
-          {{ product.title }}
-        </h2>
+    <h2 class="lp-product-title">
+      {{ product.title }}
+    </h2>
 
-        {% render 'product-price' %}
+    {% render 'product-price' %}
 
-        {% render 'trust-badges' %}
+    {% render 'trust-badges' %}
 
-        <!-- OFERTAS -->
+    <!-- OFERTAS -->
 
-        <div class="lp-bundle-selector">
+    <div class="lp-bundle-selector">
 
-          <h3 class="lp-bundle-title">
-            Selecciona tu oferta
-          </h3>
+      <h3 class="lp-bundle-title">
+        Selecciona tu oferta
+      </h3>
 
-          <div class="lp-bundle-options">
+      <div class="lp-bundle-options">
 
-            <label class="lp-bundle-option">
+        {% for variant in product.variants %}
 
-              <input
-                type="radio"
-                name="bundle"
+          <label
+            class="
+              lp-bundle-option
+              {% if variant.title contains 'Paga 2 Lleva 3' %}
+                lp-bundle-best
+              {% endif %}
+              {% if variant.title contains 'Paga 3 Lleva 5' %}
+                lp-bundle-hot
+              {% endif %}
+            "
+          >
+
+            <input
+              type="radio"
+              name="id"
+              value="{{ variant.id }}"
+              {% if forloop.first %}
                 checked
-              >
+              {% endif %}
+            >
 
-              <span>
-                1 Unidad
-              </span>
+            <div class="lp-bundle-content">
 
-            </label>
+              <div class="lp-bundle-name">
+                {{ variant.title }}
+              </div>
 
-            <label class="lp-bundle-option">
+              <div class="lp-bundle-price">
+                {{ variant.price | money }}
+              </div>
 
-              <input
-                type="radio"
-                name="bundle"
-              >
+            </div>
 
-              <span>
-                2 Unidades
-              </span>
+          </label>
 
-            </label>
-
-            <label class="lp-bundle-option lp-bundle-best">
-
-              <input
-                type="radio"
-                name="bundle"
-              >
-
-              <span>
-                ⭐ Paga 2 Lleva 3
-              </span>
-
-            </label>
-
-            <label class="lp-bundle-option lp-bundle-hot">
-
-              <input
-                type="radio"
-                name="bundle"
-              >
-
-              <span>
-                🔥 Paga 3 Lleva 5
-              </span>
-
-            </label>
-
-          </div>
-
-        </div>
-
-        {% render 'buy-buttons' %}
+        {% endfor %}
 
       </div>
 
+    </div>
+
+    {% render 'buy-buttons' %}
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+{% schema %}
+{
+"name": "LP Product Form",
+"settings": [],
+"presets": [
+{
+"name": "LP Product Form"
+}
+]
+}
+{% endschema %}
     </div>
 
   </div>
