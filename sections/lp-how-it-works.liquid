@@ -1,0 +1,35 @@
+{% schema %}
+{
+  "name": "LP How It Works",
+  "max_blocks": 10,
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Paso",
+      "settings": [
+        {
+          "type": "text",
+          "id": "step_title",
+          "label": "Título"
+        },
+        {
+          "type": "textarea",
+          "id": "step_description",
+          "label": "Descripción"
+        },
+        {
+          "type": "text",
+          "id": "step_icon",
+          "label": "Icono Emoji",
+          "default": "✅"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "LP How It Works"
+    }
+  ]
+}
+{% endschema %}
