@@ -2,99 +2,59 @@
 
   <div class="lp-container">
 
-      <div class="lp-section-heading">
+    <div class="lp-section-heading">
 
-            <h2>Elige tu mejor opción</h2>
+      {% if product.metafields.custom.offer_title != blank %}
+        <h2>
+          {{ product.metafields.custom.offer_title }}
+        </h2>
+      {% endif %}
 
-                  <p>
-                          Aprovecha nuestras ofertas exclusivas y obtén el máximo beneficio.
-                                </p>
+      {% if product.metafields.custom.offer_subtitle != blank %}
+        <p>
+          {{ product.metafields.custom.offer_subtitle }}
+        </p>
+      {% endif %}
 
-                                    </div>
+    </div>
 
-                                        <div class="lp-offer-grid">
+    {% if product.metafields.custom.offer_featured != blank
+      or product.metafields.custom.offer_featured_text != blank %}
 
-                                              <!-- PLAN 1 -->
+      <div class="lp-featured-offer">
 
-                                                    <div class="lp-offer-card">
+        <div class="lp-featured-offer__label">
+          ⭐ Oferta más elegida
+        </div>
 
-                                                            <div class="lp-offer-name">
-                                                                      1 Unidad
-                                                                              </div>
+        {% if product.metafields.custom.offer_featured != blank %}
+          <div class="lp-featured-offer__title">
+            {{ product.metafields.custom.offer_featured }}
+          </div>
+        {% endif %}
 
-                                                                                      <div class="lp-offer-description">
-                                                                                                Ideal para comenzar.
-                                                                                                        </div>
+        {% if product.metafields.custom.offer_featured_text != blank %}
+          <div class="lp-featured-offer__text">
+            {{ product.metafields.custom.offer_featured_text }}
+          </div>
+        {% endif %}
 
-                                                                                                              </div>
+      </div>
 
-                                                                                                                    <!-- PLAN 2 -->
+    {% endif %}
 
-                                                                                                                          <div class="lp-offer-card">
+  </div>
 
-                                                                                                                                  <div class="lp-offer-name">
-                                                                                                                                            2 Unidades
-                                                                                                                                                    </div>
+</section>
 
-                                                                                                                                                            <div class="lp-offer-description">
-                                                                                                                                                                      Más ahorro y continuidad.
-                                                                                                                                                                              </div>
-
-                                                                                                                                                                                    </div>
-
-                                                                                                                                                                                          <!-- DESTACADO -->
-
-                                                                                                                                                                                                <div class="lp-offer-card lp-offer-card--featured">
-
-                                                                                                                                                                                                        <div class="lp-offer-badge">
-                                                                                                                                                                                                                  MÁS VENDIDO ⭐
-                                                                                                                                                                                                                          </div>
-
-                                                                                                                                                                                                                                  <div class="lp-offer-name">
-                                                                                                                                                                                                                                            Paga 2 Lleva 3
-                                                                                                                                                                                                                                                    </div>
-
-                                                                                                                                                                                                                                                            <div class="lp-offer-description">
-                                                                                                                                                                                                                                                                      La opción preferida por nuestros clientes.
-                                                                                                                                                                                                                                                                              </div>
-
-                                                                                                                                                                                                                                                                                    </div>
-
-                                                                                                                                                                                                                                                                                          <!-- PREMIUM -->
-
-                                                                                                                                                                                                                                                                                                <div class="lp-offer-card">
-
-                                                                                                                                                                                                                                                                                                        <div class="lp-offer-badge lp-offer-badge-fire">
-                                                                                                                                                                                                                                                                                                                  MÁXIMO AHORRO 🔥
-                                                                                                                                                                                                                                                                                                                          </div>
-
-                                                                                                                                                                                                                                                                                                                                  <div class="lp-offer-name">
-                                                                                                                                                                                                                                                                                                                                            Paga 3 Lleva 5
-                                                                                                                                                                                                                                                                                                                                                    </div>
-
-                                                                                                                                                                                                                                                                                                                                                            <div class="lp-offer-description">
-                                                                                                                                                                                                                                                                                                                                                                      El mejor precio por unidad.
-                                                                                                                                                                                                                                                                                                                                                                              </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                    </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                        </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                          </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                          </section>
-
-                                                                                                                                                                                                                                                                                                                                                                                          {% schema %}
-                                                                                                                                                                                                                                                                                                                                                                                          {
-                                                                                                                                                                                                                                                                                                                                                                                              "name": "LP Offer",
-                                                                                                                                                                                                                                                                                                                                                                                                "settings": [],
-                                                                                                                                                                                                                                                                                                                                                                                                  "presets": [
-                                                                                                                                                                                                                                                                                                                                                                                                        {
-                                                                                                                                                                                                                                                                                                                                                                                                                  "name": "LP Offer"
-                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                  ]
-                                                                                                                                                                                                                                                                                                                                                                                          }
-                                                                                                                                                                                                                                                                                                                                                                                          {% endschema %}
-                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                  ]
-                                                                                                                                                                                                                                                                                                                                                                                          }
+{% schema %}
+{
+  "name": "LP Offer",
+  "settings": [],
+  "presets": [
+    {
+      "name": "LP Offer"
+    }
+  ]
+}
+{% endschema %}
