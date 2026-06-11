@@ -1,22 +1,50 @@
-{% assign faqs = product.metafields.custom.faqs.value %}
+<section class="lp-faq-section lp-section">
 
-{% if faqs != blank %}
+  <div class="lp-container">
 
-<div class="lp-faq">
+    <div class="lp-section-heading">
+      <h2>Preguntas frecuentes</h2>
+      <p>Resolvemos las dudas más comunes antes de tu compra.</p>
+    </div>
 
-  {% for faq in faqs %}
+    {% assign faqs = product.metafields.custom.faqs.value %}
 
-    <details class="lp-faq-item" {% if forloop.first %}open{% endif %}>
-      <summary>{{ faq.pregunta }}</summary>
+    {% if faqs != blank %}
 
-      <div class="lp-faq-answer">
-        {{ faq.respuesta }}
+      <div class="lp-faq">
+
+        {% for faq in faqs %}
+
+          <details class="lp-faq-item" {% if forloop.first %}open{% endif %}>
+
+            <summary>
+              {{ faq.question }}
+            </summary>
+
+            <div class="lp-faq-answer">
+              {{ faq.answer }}
+            </div>
+
+          </details>
+
+        {% endfor %}
+
       </div>
 
-    </details>
+    {% endif %}
 
-  {% endfor %}
+  </div>
 
-</div>
+</section>
 
-{% endif %}
+{% schema %}
+{
+  "name": "LP FAQ",
+  "settings": [],
+  "presets": [
+    {
+      "name": "LP FAQ"
+    }
+  ]
+}
+{% endschema %}
