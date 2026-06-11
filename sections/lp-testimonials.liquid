@@ -16,32 +16,30 @@
         {% for item in testimonials %}
 
           <div class="lp-testimonial-card">
-{% if item.foto != blank %}
-  <div class="lp-testimonial-avatar">
-    {{
-      item.foto
-      | image_url: width: 180
-      | image_tag:
-        loading: 'lazy',
-        class: 'lp-testimonial-avatar-img'
-    }}
-  </div>
-{% endif %}
 
-          {% if item.foto != blank %}
-  <div class="lp-testimonial-avatar">
-    {{
-      item.foto
-      | image_url: width: 160
-      | image_tag:
-        loading: 'lazy',
-        class: 'lp-testimonial-avatar-img'
-    }}
-  </div>
-{% endif %}  
-     
+            {% if item.foto != blank %}
+              <div class="lp-testimonial-avatar">
+                {{
+                  item.foto
+                  | image_url: width: 180
+                  | image_tag:
+                    loading: 'lazy',
+                    class: 'lp-testimonial-avatar-img'
+                }}
+              </div>
+            {% endif %}
 
-            
+            {% if item.calificacion != blank %}
+              <div class="lp-stars">
+
+                {% assign stars = item.calificacion | plus: 0 %}
+
+                {% for i in (1..stars) %}
+                  ★
+                {% endfor %}
+
+              </div>
+            {% endif %}
 
             {% if item.testimonio != blank %}
               <div class="lp-testimonial-text">
