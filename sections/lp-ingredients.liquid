@@ -1,0 +1,57 @@
+<section class="lp-ingredients-section lp-section">
+
+  <div class="lp-container">
+
+    <div class="lp-section-heading">
+
+      <h2>
+        Ingredientes seleccionados cuidadosamente
+      </h2>
+
+      <p>
+        Componentes elegidos bajo altos estándares de calidad.
+      </p>
+
+    </div>
+
+    {% assign ingredients = product.metafields.custom.ingredients.value %}
+
+    {% if ingredients != blank %}
+
+      <div class="lp-ingredients-grid">
+
+        {% for ingredient in ingredients %}
+
+          <div class="lp-ingredient-card">
+
+            <div class="lp-ingredient-icon">
+              🌿
+            </div>
+
+            <p>
+              {{ ingredient }}
+            </p>
+
+          </div>
+
+        {% endfor %}
+
+      </div>
+
+    {% endif %}
+
+  </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "LP Ingredients",
+  "settings": [],
+  "presets": [
+    {
+      "name": "LP Ingredients"
+    }
+  ]
+}
+{% endschema %}
