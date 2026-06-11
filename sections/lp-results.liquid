@@ -1,0 +1,57 @@
+<section class="lp-results-section lp-section">
+
+  <div class="lp-container">
+
+    <div class="lp-section-heading">
+
+      <h2>
+        Resultados que nuestros clientes destacan
+      </h2>
+
+      <p>
+        Una experiencia enfocada en bienestar, confianza y satisfacción.
+      </p>
+
+    </div>
+
+    {% assign results = product.metafields.custom.results.value %}
+
+    {% if results != blank %}
+
+      <div class="lp-results-grid">
+
+        {% for result in results %}
+
+          <div class="lp-result-card">
+
+            <div class="lp-result-icon">
+              ⭐
+            </div>
+
+            <p>
+              {{ result }}
+            </p>
+
+          </div>
+
+        {% endfor %}
+
+      </div>
+
+    {% endif %}
+
+  </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "LP Results",
+  "settings": [],
+  "presets": [
+    {
+      "name": "LP Results"
+    }
+  ]
+}
+{% endschema %}
