@@ -1189,3 +1189,66 @@ font-weight: 700;
 color: var(--lp-gold);
 }
 
+/* ==========================================
+   LP TESTIMONIALS
+   ========================================== */
+
+.lp-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.lp-testimonial-card {
+  background: #ffffff;
+  border-radius: var(--lp-radius-lg);
+  padding: 2rem;
+  box-shadow: var(--lp-shadow-sm);
+  border: 1px solid #eee;
+  text-align: center;
+}
+
+.lp-testimonial-avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.lp-testimonial-avatar-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 4px solid var(--lp-gold);
+}
+
+.lp-stars {
+  color: var(--lp-gold);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.lp-testimonial-text {
+  color: #222 !important;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.lp-testimonial-author {
+  color: #111 !important;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.lp-testimonial-meta {
+  color: #666 !important;
+  margin-top: .25rem;
+}
+
+@media (max-width: 991px) {
+  .lp-testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
