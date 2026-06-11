@@ -767,6 +767,21 @@ ttom
 /* ==========================================
    LP TESTIMONIALS
    ========================================== */
+.lp-testimonial-avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.lp-testimonial-avatar-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
 
    .lp-testimonials-grid {
 
@@ -780,6 +795,21 @@ ttom
            }
 
            .lp-testimonial-card {
+              .lp-testimonial-avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.lp-testimonial-avatar-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border: 3px solid var(--lp-gold);
+}
 
              background: white;
 
@@ -1159,17 +1189,3 @@ font-weight: 700;
 color: var(--lp-gold);
 }
 
-.lp-testimonial-avatar {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 16px;
-}
-
-.lp-testimonial-avatar-img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}
