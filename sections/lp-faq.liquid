@@ -11,18 +11,18 @@
 
     {% if faqs != blank %}
 
-      <div class="lp-faq">
+      <div class="lp-faq-list">
 
         {% for faq in faqs %}
 
           <details class="lp-faq-item" {% if forloop.first %}open{% endif %}>
 
-            <summary>
-              {{ faq.question }}
+            <summary class="lp-faq-question">
+              {{ faq.pregunta }}
             </summary>
 
             <div class="lp-faq-answer">
-              {{ faq.answer }}
+              {{ faq.respuesta | metafield_tag }}
             </div>
 
           </details>
