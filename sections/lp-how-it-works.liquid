@@ -2,15 +2,46 @@
 
   <div class="lp-container">
 
-    {% assign step = product.metafields.custom.how_it_works.value %}
+    <div class="lp-section-heading">
+      <h2>¿Cómo funciona?</h2>
+      <p>Sigue estos sencillos pasos.</p>
+    </div>
 
-    <h2>Prueba How It Works</h2>
+    {% assign steps = product.metafields.custom.lp_how_it_works.value %}
 
-    <p>Título: {{ step.titulo }}</p>
+    {% if steps != blank %}
 
-    <p>Descripción: {{ step.descripcion }}</p>
+      <div class="lp-how-it-works-grid">
 
-    <p>Icono: {{ step.icono }}</p>
+        {% for step in steps %}
+
+          <div class="lp-how-it-works-card">
+
+            {% if step.icono != blank %}
+              <div class="lp-how-it-works-icon">
+                {{ step.icono }}
+              </div>
+            {% endif %}
+
+            {% if step.titulo != blank %}
+              <h3 class="lp-how-it-works-title">
+                {{ step.titulo }}
+              </h3>
+            {% endif %}
+
+            {% if step.descripcion != blank %}
+              <div class="lp-how-it-works-description">
+                {{ step.descripcion | metafield_tag }}
+              </div>
+            {% endif %}
+
+          </div>
+
+        {% endfor %}
+
+      </div>
+
+    {% endif %}
 
   </div>
 
