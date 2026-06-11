@@ -2,101 +2,60 @@
 
   <div class="lp-container">
 
-      <div class="lp-section-heading">
+    <div class="lp-section-heading">
 
-            <h2>
-                    Diseñado para ayudarte a sentirte mejor cada día
-                          </h2>
+      <h2>
+        Diseñado para ayudarte a sentirte mejor cada día
+      </h2>
 
-                                <p>
-                                        Una solución enfocada en bienestar, confianza y calidad.
-                                              </p>
+      <p>
+        Una solución enfocada en bienestar, confianza y calidad.
+      </p>
 
-                                                  </div>
+    </div>
 
-                                                      <div class="lp-benefits-grid">
+    {% assign benefits = product.metafields.custom.benefits.value %}
 
-                                                            <div class="lp-benefit-card">
+    {% if benefits != blank %}
 
-                                                                    <div class="lp-benefit-icon">
-                                                                              💪
-                                                                                      </div>
+      <div class="lp-benefits-grid">
 
-                                                                                              <h3>
-                                                                                                        Mayor bienestar
-                                                                                                                </h3>
+        {% for benefit in benefits %}
 
-                                                                                                                        <p>
-                                                                                                                                  Diseñado para apoyar tu rutina diaria y ayudarte a mantener un estilo de vida activo.
-                                                                                                                                          </p>
+          <div class="lp-benefit-card">
 
-                                                                                                                                                </div>
+            <div class="lp-benefit-icon">
+              ✓
+            </div>
 
-                                                                                                                                                      <div class="lp-benefit-card">
+            <h3>
+              Beneficio {{ forloop.index }}
+            </h3>
 
-                                                                                                                                                              <div class="lp-benefit-icon">
-                                                                                                                                                                        ⚡
-                                                                                                                                                                                </div>
+            <p>
+              {{ benefit }}
+            </p>
 
-                                                                                                                                                                                        <h3>
-                                                                                                                                                                                                  Más confianza
-                                                                                                                                                                                                          </h3>
+          </div>
 
-                                                                                                                                                                                                                  <p>
-                                                                                                                                                                                                                            Siéntete mejor preparado para afrontar tus actividades diarias.
-                                                                                                                                                                                                                                    </p>
+        {% endfor %}
 
-                                                                                                                                                                                                                                          </div>
+      </div>
 
-                                                                                                                                                                                                                                                <div class="lp-benefit-card">
+    {% endif %}
 
-                                                                                                                                                                                                                                                        <div class="lp-benefit-icon">
-                                                                                                                                                                                                                                                                  🌿
-                                                                                                                                                                                                                                                                          </div>
+  </div>
 
-                                                                                                                                                                                                                                                                                  <h3>
-                                                                                                                                                                                                                                                                                            Calidad Premium
-                                                                                                                                                                                                                                                                                                    </h3>
+</section>
 
-                                                                                                                                                                                                                                                                                                            <p>
-                                                                                                                                                                                                                                                                                                                      Elaborado con altos estándares de calidad para ofrecer una experiencia superior.
-                                                                                                                                                                                                                                                                                                                              </p>
-
-                                                                                                                                                                                                                                                                                                                                    </div>
-
-                                                                                                                                                                                                                                                                                                                                          <div class="lp-benefit-card">
-
-                                                                                                                                                                                                                                                                                                                                                  <div class="lp-benefit-icon">
-                                                                                                                                                                                                                                                                                                                                                            ⭐
-                                                                                                                                                                                                                                                                                                                                                                    </div>
-
-                                                                                                                                                                                                                                                                                                                                                                            <h3>
-                                                                                                                                                                                                                                                                                                                                                                                      Uso sencillo
-                                                                                                                                                                                                                                                                                                                                                                                              </h3>
-
-                                                                                                                                                                                                                                                                                                                                                                                                      <p>
-                                                                                                                                                                                                                                                                                                                                                                                                                Fácil de incorporar dentro de tu rutina diaria de bienestar.
-                                                                                                                                                                                                                                                                                                                                                                                                                        </p>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                              </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                  </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                    </section>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                    {% schema %}
-                                                                                                                                                                                                                                                                                                                                                                                                                                    {
-                                                                                                                                                                                                                                                                                                                                                                                                                                          "name": "LP Benefits",
-                                                                                                                                                                                                                                                                                                                                                                                                                                            "settings": [],
-                                                                                                                                                                                                                                                                                                                                                                                                                                              "presets": [
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                              "name": "LP Benefits"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                                                                              ]
-                                                                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                                                                    {% endschema %}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                                                                              ]
-                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+{% schema %}
+{
+  "name": "LP Benefits",
+  "settings": [],
+  "presets": [
+    {
+      "name": "LP Benefits"
+    }
+  ]
+}
+{% endschema %}
