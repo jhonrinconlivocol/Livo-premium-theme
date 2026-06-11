@@ -17,10 +17,22 @@
 
           <div class="lp-testimonial-card">
 
-            {% if item.rating != blank %}
+            {% if item.foto != blank %}
+              <div class="lp-testimonial-image">
+                <img
+                  src="{{ item.foto | image_url: width: 200 }}"
+                  alt="{{ item.nombre }}"
+                  loading="lazy"
+                  width="100"
+                  height="100"
+                >
+              </div>
+            {% endif %}
+
+            {% if item.calificacion != blank %}
               <div class="lp-stars">
 
-                {% assign stars = item.rating | plus: 0 %}
+                {% assign stars = item.calificacion | plus: 0 %}
 
                 {% for i in (1..stars) %}
                   ★
@@ -29,21 +41,21 @@
               </div>
             {% endif %}
 
-            {% if item.testimonial != blank %}
-              <p class="lp-testimonial-text">
-                {{ item.testimonial }}
-              </p>
-            {% endif %}
-
-            {% if item.author != blank %}
-              <div class="lp-testimonial-author">
-                {{ item.author }}
+            {% if item.testimonio != blank %}
+              <div class="lp-testimonial-text">
+                {{ item.testimonio | metafield_tag }}
               </div>
             {% endif %}
 
-            {% if item.location != blank %}
+            {% if item.nombre != blank %}
+              <div class="lp-testimonial-author">
+                {{ item.nombre }}
+              </div>
+            {% endif %}
+
+            {% if item.ciudad != blank %}
               <div class="lp-testimonial-meta">
-                {{ item.location }}
+                {{ item.ciudad }}
               </div>
             {% endif %}
 
