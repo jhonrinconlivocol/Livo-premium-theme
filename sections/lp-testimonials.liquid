@@ -1,39 +1,60 @@
+<section class="lp-testimonials-section lp-section">
+
+  <div class="lp-container">
+
+    <div class="lp-section-heading">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <p>Experiencias compartidas por nuestros clientes.</p>
+    </div>
+
+    {% assign testimonios = product.metafields.custom.testimonios.value %}
+
+    {% if testimonios != blank %}
+
+      <div class="lp-testimonials-grid">
+
+        {% for testimonio in testimonios %}
+
+          <div class="lp-testimonial-card">
+
+            <div class="lp-stars">
+
+              {% assign estrellas = testimonio.rating | default: 5 %}
+
+              {% for i in (1..estrellas) %}
+                ★
+              {% endfor %}
+
+            </div>
+
+            <p class="lp-testimonial-text">
+              {{ testimonio.texto }}
+            </p>
+
+            <div class="lp-testimonial-author">
+              {{ testimonio.nombre }}
+            </div>
+
+            <div class="lp-testimonial-meta">
+              {{ testimonio.ciudad }} • Cliente Verificado
+            </div>
+
+          </div>
+
+        {% endfor %}
+
+      </div>
+
+    {% endif %}
+
+  </div>
+
+</section>
+
 {% schema %}
 {
   "name": "LP Testimonials",
-  "max_blocks": 20,
-  "blocks": [
-    {
-      "type": "testimonial",
-      "name": "Testimonio",
-      "settings": [
-        {
-          "type": "text",
-          "id": "name",
-          "label": "Nombre"
-        },
-        {
-          "type": "text",
-          "id": "city",
-          "label": "Ciudad"
-        },
-        {
-          "type": "range",
-          "id": "rating",
-          "min": 1,
-          "max": 5,
-          "step": 1,
-          "default": 5,
-          "label": "Estrellas"
-        },
-        {
-          "type": "textarea",
-          "id": "testimonial",
-          "label": "Testimonio"
-        }
-      ]
-    }
-  ],
+  "settings": [],
   "presets": [
     {
       "name": "LP Testimonials"
