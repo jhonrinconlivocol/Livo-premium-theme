@@ -1,29 +1,22 @@
-{% schema %}
-{
-  "name": "LP FAQ",
-  "max_blocks": 20,
-  "blocks": [
-    {
-      "type": "faq_item",
-      "name": "Pregunta FAQ",
-      "settings": [
-        {
-          "type": "text",
-          "id": "question",
-          "label": "Pregunta"
-        },
-        {
-          "type": "textarea",
-          "id": "answer",
-          "label": "Respuesta"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "LP FAQ"
-    }
-  ]
-}
-{% endschema %}
+{% assign faqs = product.metafields.custom.faq_producto.value %}
+
+{% if faqs != blank %}
+
+<div class="lp-faq">
+
+  {% for faq in faqs %}
+
+    <details class="lp-faq-item" {% if forloop.first %}open{% endif %}>
+      <summary>{{ faq.pregunta }}</summary>
+
+      <div class="lp-faq-answer">
+        {{ faq.respuesta }}
+      </div>
+
+    </details>
+
+  {% endfor %}
+
+</div>
+
+{% endif %}
