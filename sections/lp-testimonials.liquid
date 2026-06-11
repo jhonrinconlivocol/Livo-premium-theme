@@ -4,40 +4,48 @@
 
     <div class="lp-section-heading">
       <h2>Lo que dicen nuestros clientes</h2>
-      <p>Experiencias compartidas por nuestros clientes.</p>
+      <p>Experiencias reales de personas que ya probaron el producto.</p>
     </div>
 
-    {% assign testimonios = product.metafields.custom.testimonios.value %}
+    {% assign testimonials = product.metafields.custom.testimonios.value %}
 
-    {% if testimonios != blank %}
+    {% if testimonials != blank %}
 
       <div class="lp-testimonials-grid">
 
-        {% for testimonio in testimonios %}
+        {% for item in testimonials %}
 
           <div class="lp-testimonial-card">
 
-            <div class="lp-stars">
+            {% if item.rating != blank %}
+              <div class="lp-stars">
 
-              {% assign estrellas = testimonio.rating | default: 5 %}
+                {% assign stars = item.rating | plus: 0 %}
 
-              {% for i in (1..estrellas) %}
-                ★
-              {% endfor %}
+                {% for i in (1..stars) %}
+                  ★
+                {% endfor %}
 
-            </div>
+              </div>
+            {% endif %}
 
-            <p class="lp-testimonial-text">
-              {{ testimonio.texto }}
-            </p>
+            {% if item.testimonial != blank %}
+              <p class="lp-testimonial-text">
+                {{ item.testimonial }}
+              </p>
+            {% endif %}
 
-            <div class="lp-testimonial-author">
-              {{ testimonio.nombre }}
-            </div>
+            {% if item.author != blank %}
+              <div class="lp-testimonial-author">
+                {{ item.author }}
+              </div>
+            {% endif %}
 
-            <div class="lp-testimonial-meta">
-              {{ testimonio.ciudad }} • Cliente Verificado
-            </div>
+            {% if item.location != blank %}
+              <div class="lp-testimonial-meta">
+                {{ item.location }}
+              </div>
+            {% endif %}
 
           </div>
 
