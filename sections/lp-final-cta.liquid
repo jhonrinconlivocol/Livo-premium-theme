@@ -5,14 +5,20 @@
     <div class="lp-final-cta-card">
 
       <h2>
-        Da el siguiente paso hoy
+        {% if product.metafields.custom.final_cta_title != blank %}
+          {{ product.metafields.custom.final_cta_title }}
+        {% else %}
+          Da el siguiente paso hoy
+        {% endif %}
       </h2>
 
       <p class="lp-final-cta-text">
 
-        Miles de clientes ya han elegido una alternativa enfocada en calidad, confianza y bienestar.
-
-        Aprovecha las promociones disponibles y recibe tu pedido en la puerta de tu casa.
+        {% if product.metafields.custom.final_cta_text != blank %}
+          {{ product.metafields.custom.final_cta_text }}
+        {% else %}
+          Miles de clientes ya han elegido una alternativa enfocada en calidad, confianza y bienestar. Aprovecha las promociones disponibles y recibe tu pedido en la puerta de tu casa.
+        {% endif %}
 
       </p>
 
