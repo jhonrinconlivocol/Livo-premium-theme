@@ -17,22 +17,20 @@
 
           <div class="lp-how-it-works-card">
 
-            {% if step.step_icon != blank %}
+            {% if step.icono != blank %}
               <div class="lp-how-it-works-icon">
-                {{ step.step_icon }}
+                {{ step.icono }}
               </div>
             {% endif %}
 
-            {% if step.step_title != blank %}
-              <h3>
-                {{ step.step_title }}
-              </h3>
+            {% if step.titulo != blank %}
+              <h3>{{ step.titulo }}</h3>
             {% endif %}
 
-            {% if step.step_description != blank %}
-              <p>
-                {{ step.step_description }}
-              </p>
+            {% if step.descripcion != blank %}
+              <div class="lp-how-it-works-description">
+                {{ step.descripcion }}
+              </div>
             {% endif %}
 
           </div>
