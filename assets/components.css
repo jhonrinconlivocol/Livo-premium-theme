@@ -1348,3 +1348,25 @@ color: var(--lp-gold);
   color: #333 !important;
   margin: 0;
 }
+
+.lp-faq-item summary {
+  position: relative;
+  padding-left: 50px;
+}
+
+.lp-faq-item summary::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(190,155,95,.15);
+  color: var(--lp-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .9rem;
+}
