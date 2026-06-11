@@ -9,14 +9,20 @@
       </div>
 
       <h2>
-        Compra con tranquilidad
+        {% if product.metafields.custom.guarantee_title != blank %}
+          {{ product.metafields.custom.guarantee_title }}
+        {% else %}
+          Compra con tranquilidad
+        {% endif %}
       </h2>
 
       <p class="lp-guarantee-text">
 
-        Queremos que tengas la mejor experiencia posible.
-
-        Por eso trabajamos con productos de calidad, envíos seguros y atención personalizada durante todo el proceso.
+        {% if product.metafields.custom.guarantee_text != blank %}
+          {{ product.metafields.custom.guarantee_text }}
+        {% else %}
+          Queremos que tengas la mejor experiencia posible. Por eso trabajamos con productos de calidad, envíos seguros y atención personalizada durante todo el proceso.
+        {% endif %}
 
       </p>
 
