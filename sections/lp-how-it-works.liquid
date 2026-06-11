@@ -7,32 +7,32 @@
       <p>Sigue estos sencillos pasos.</p>
     </div>
 
-    {% assign pasos = product.metafields.custom.how_it_works.value %}
+    {% assign steps = product.metafields.custom.how_it_works.value %}
 
-    {% if pasos != blank %}
+    {% if steps != blank %}
 
       <div class="lp-how-it-works-grid">
 
-        {% for paso in pasos %}
+        {% for step in steps %}
 
-          <div class="lp-step-card">
+          <div class="lp-how-it-works-card">
 
-            {% if paso.icono != blank %}
-              <div class="lp-step-icon">
-                {{ paso.icono }}
+            {% if step.step_icon != blank %}
+              <div class="lp-how-it-works-icon">
+                {{ step.step_icon }}
               </div>
             {% endif %}
 
-            {% if paso.titulo != blank %}
-              <h3 class="lp-step-title">
-                {{ paso.titulo }}
+            {% if step.step_title != blank %}
+              <h3>
+                {{ step.step_title }}
               </h3>
             {% endif %}
 
-            {% if paso.descripcion != blank %}
-              <div class="lp-step-description">
-                {{ paso.descripcion }}
-              </div>
+            {% if step.step_description != blank %}
+              <p>
+                {{ step.step_description }}
+              </p>
             {% endif %}
 
           </div>
